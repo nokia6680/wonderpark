@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>WonderPark</title>
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link media="none" onload="if(media!="all") media="all"" rel="stylesheet" type="text/css", href= style.css>
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div class="wrapper">
+		<!--Page header-->
+		<header class="header">
+			<div class="header__logo">
+				<a class="header__link" href="index.html" target="_self">
+					<img class="header__img" src="img/main-logo.svg" alt="Nickelodeon" />
+				</a>
+			</div>
+			<!--Mobile menu-->
+			<nav class="header__nav header-nav">
+				<ul class="header-nav__list nav-list">
+					<li class="nav-list__item">
+						<a class="nav-list__link" href="#" target="_self">
+							<span class="nav-list__text"></span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!--Sidebar with logo and path to tip page-->
+		<div class="sidebar">
+			<!--Логотип фильма-->
+			<div class="sidebar__logo">
+				<a class="sidebar__link" href="#" target="_self">
+					<picture class="sidebar__frame">
+						<source srcset="img/film-logo.webp" type="image/webp" />
+						<img class="sidebar__image" src="img/film-logo.png" alt="Волшебный парк Джун" />
+					</picture>
+				</a>
+				<span class="sidebar__date">В кино с 21 марта</span>
+				<span class="sidebar__type">в 2D и 3D</span>
+			</div>
+			<!--Блок перехода на страницу подсказки-->
+			<div class="sidebar__hint hint">
+				<p class="hint__description"></p>
+				<a class="hint__link" href="tip.hmtl" target="_self">
+					<span class="visually-hidden">Перейти</span>
+				</a>
+			</div>
+		</div>
+		<!--Page main part-->
+		<main class="main">
+			<!--Header part - buttons + personal area-->
+			<header class="main__header main-header">
+				<!--Блок кнопок-->
+				<div class="main-header__controls main-nav">
+					<!--Скрытая кнопка "на главную"-->
+					<a class="main-nav__btn main-nav__btn--index" href="index.html" target="_self">
+						<span class="main-controls__text">На главную</span>
+					</a>
+					<!--Блок кнопки и списка "Фильм"-->
+					<div class="main-nav__wrapper main-nav__wrapper--film">
+						<a class="main-nav__btn main-nav__btn--film" href="#" target="_self">
+							<span class="main-controls__text">Фильм</span>
+						</a>
+						<ul class="main-nav__list main-nav__list--film">
+							<li class="main-nav__item">
+								<a class="main-nav__link" href="#" target="_self">Трейлер</a>
+							</li>
+							<li class="main-nav__item">
+								<a class="main-nav__link" href="#" target="_self">Видео</a>
+							</li>
+							<li class="main-nav__item">
+								<a class="main-nav__link" href="#" target="_self">Персонажи</a>
+							</li>
+						</ul>
+					</div>
+					<!--Блок кнопки и списка "Конкурс"-->
+					<div class="main-nav__wrapper main-nav__wrapper--event">
+						<a class="main-nav__btn main-nav__btn--event" href="#" target="_self">
+							<span class="main-controls__text">Фильм</span>
+						</a>
+						<ul class="main-nav__list main-nav__list--event">
+							<li class="main-nav__item">
+								<a class="main-nav__link" href="#" target="_self">Как участвовать?</a>
+							</li>
+							<li class="main-nav__item">
+								<a class="main-nav__link" href="#" target="_self">Призы</a>
+							</li>
+							<li class="main-nav__item">
+								<a class="main-nav__link" href="#" target="_self">Правила</a>
+							</li>
+							<li class="main-nav__item">
+								<a class="main-nav__link" href="#" target="_self">Галерея работ</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--Область личного кабинета-->
+				<div class="main-header__cabinet main-cabinet">
+					<div class="main-cabinet__avatar">
+						<button class="main-cabinet__close" type="button"></button>
+						<picture class="main-cabinet__frame">
+							<source srcset="img/personal-photo.webp" type="image/webp" />
+							<img class="main-cabinet__photo" src="img/personal-photo.png" alt="Мой аватар" />
+						</picture>
+						<b class="main-cabinet__name">Анатолий М.</b>
+					</div>
+					<ul class="main-cabinet__result cabinet-result">
+						<li class="cabinet-result__item cabinet-result__item--first">
+							<!--Base image for uncaught symbol-->
+							<picture class="cabinet-result__frame cabinet-result__frame--empty">
+								<source srcset="img/empty-1.webp" type="image/webp" />
+								<img class="cabinet-result__image" src="img/empty-1.png" alt="Неопознанная панда" />
+							</picture>
+							<!--Image for correctly taken symbol-->
+							<picture class="cabinet-result__frame cabinet-result__frame--full" id="symbol-1">
+								<source srcset="img/full-1.webp" type="image/webp" />
+								<img class="cabinet-result__image" src="img/full-1.png" alt="Опознанная панда" />
+							</picture>
+						</li>
+						<li class="cabinet-result__item cabinet-result__item--second">
+							<!--Base image for uncaught symbol-->
+							<picture class="cabinet-result__frame cabinet-result__frame--empty">
+								<source srcset="img/empty-1.webp" type="image/webp" />
+								<img class="cabinet-result__image" src="img/empty-1.png" alt="Неопознанная панда" />
+							</picture>
+							<!--Image for correctly taken symbol-->
+							<picture class="cabinet-result__frame cabinet-result__frame--full" id="symbol-1">
+								<source srcset="img/full-1.webp" type="image/webp" />
+								<img class="cabinet-result__image" src="img/full-1.png" alt="Опознанная панда" />
+							</picture>
+						</li>
+						<li class="cabinet-result__item cabinet-result__item--third">
+							<!--Base image for uncaught symbol-->
+							<picture class="cabinet-result__frame cabinet-result__frame--empty">
+								<source srcset="img/empty-1.webp" type="image/webp" />
+								<img class="cabinet-result__image" src="img/empty-1.png" alt="Неопознанная панда" />
+							</picture>
+							<!--Image for correctly taken symbol-->
+							<picture class="cabinet-result__frame cabinet-result__frame--full" id="symbol-1">
+								<source srcset="img/full-1.webp" type="image/webp" />
+								<img class="cabinet-result__image" src="img/full-1.png" alt="Опознанная панда" />
+							</picture>
+						</li>
+						<li class="cabinet-result__item cabinet-result__item--fourth">
+							<!--Base image for uncaught symbol-->
+							<picture class="cabinet-result__frame cabinet-result__frame--empty">
+								<source srcset="img/empty-1.webp" type="image/webp" />
+								<img class="cabinet-result__image" src="img/empty-1.png" alt="Неопознанная панда" />
+							</picture>
+							<!--Image for correctly taken symbol-->
+							<picture class="cabinet-result__frame cabinet-result__frame--full" id="symbol-1">
+								<source srcset="img/full-1.webp" type="image/webp" />
+								<img class="cabinet-result__image" src="img/full-1.png" alt="Опознанная панда" />
+							</picture>
+						</li>
+						<li class="cabinet-result__item cabinet-result__item--fifth">
+							<!--Base image for uncaught symbol-->
+							<picture class="cabinet-result__frame cabinet-result__frame--empty">
+								<source srcset="img/empty-1.webp" type="image/webp" />
+								<img class="cabinet-result__image" src="img/empty-1.png" alt="Неопознанная панда" />
+							</picture>
+							<!--Image for correctly taken symbol-->
+							<picture class="cabinet-result__frame cabinet-result__frame--full" id="symbol-1">
+								<source srcset="img/full-1.webp" type="image/webp" />
+								<img class="cabinet-result__image" src="img/full-1.png" alt="Опознанная панда" />
+							</picture>
+						</li>
+						<li class="cabinet-result__item cabinet-result__item--sixth">
+							<!--Base image for uncaught symbol-->
+							<picture class="cabinet-result__frame cabinet-result__frame--empty">
+								<source srcset="img/empty-1.webp" type="image/webp" />
+								<img class="cabinet-result__image" src="img/empty-1.png" alt="Неопознанная панда" />
+							</picture>
+							<!--Image for correctly taken symbol-->
+							<picture class="cabinet-result__frame cabinet-result__frame--full" id="symbol-1">
+								<source srcset="img/full-1.webp" type="image/webp" />
+								<img class="cabinet-result__image" src="img/full-1.png" alt="Опознанная панда" />
+							</picture>
+						</li>
+						<li class="cabinet-result__item cabinet-result__item--seventh">
+							<!--Base image for uncaught symbol-->
+							<picture class="cabinet-result__frame cabinet-result__frame--empty">
+								<source srcset="img/empty-1.webp" type="image/webp" />
+								<img class="cabinet-result__image" src="img/empty-1.png" alt="Неопознанная панда" />
+							</picture>
+							<!--Image for correctly taken symbol-->
+							<picture class="cabinet-result__frame cabinet-result__frame--full" id="symbol-1">
+								<source srcset="img/full-1.webp" type="image/webp" />
+								<img class="cabinet-result__image" src="img/full-1.png" alt="Опознанная панда" />
+							</picture>
+						</li>
+					</ul>
+					<!--Кнопка участия в конкурсе, когда собраны все 7 символов-->
+					<a class="main-cabinet__btn" href="event.html">
+						<span class="main-cabinet__text">Участвовать в конкурсе</span>
+					</a>
+				</div>
+			</header>
+			<!--Секция основного контента для выбора правильного контента-->
+			<section class="main__content main-content">
+				<h1 class="main-content__title">Смотри Nickelodeon сегодня в <span class="main-content__time">XX:XX</span> и <span class="main-content__time">XX:XX</span>, чтобы узнать верный символ</h1>
+				<div class="main-content__wrapper content-wrapper">
+					<div class="content-wrapper__item content-wrapper__item--first">
+						<!--Пустой невыбранный квадрат с символом-->
+						<picture class="content-wrapper__frame content-wrapper__frame--empty">
+							<source scrset="img/symbol-empty-1.webp" type="image/webp" />
+							<img class="content-wrapper__image" src="img/symbol-empty-1.png" alt="Символ #1" />
+						</picture>
+						<!--Выбранный квадрат с символом-->
+						<picture class="content-wrapper__frame content-wrapper__frame--active">
+							<source scrset="img/symbol-active-1.webp" type="image/webp" />
+							<img class="content-wrapper__image" src="img/symbol-active-1.png" alt="Символ #1" />
+						</picture>
+					</div>
+					<div class="content-wrapper__item content-wrapper__item--second">
+						<!--Пустой невыбранный квадрат с символом-->
+						<picture class="content-wrapper__frame content-wrapper__frame--empty">
+							<source scrset="img/symbol-empty-2.webp" type="image/webp" />
+							<img class="content-wrapper__image" src="img/symbol-empty-2.png" alt="Символ #2" />
+						</picture>
+						<!--Выбранный квадрат с символом-->
+						<picture class="content-wrapper__frame content-wrapper__frame--active">
+							<source scrset="img/symbol-active-2.webp" type="image/webp" />
+							<img class="content-wrapper__image" src="img/symbol-active-2.png" alt="Символ #2" />
+						</picture>
+					</div>
+					<div class="content-wrapper__item content-wrapper__item--third">
+						<!--Пустой невыбранный квадрат с символом-->
+						<picture class="content-wrapper__frame content-wrapper__frame--empty">
+							<source scrset="img/symbol-empty-3.webp" type="image/webp" />
+							<img class="content-wrapper__image" src="img/symbol-empty-3.png" alt="Символ #3" />
+						</picture>
+						<!--Выбранный квадрат с символом-->
+						<picture class="content-wrapper__frame content-wrapper__frame--active">
+							<source scrset="img/symbol-active-3.webp" type="image/webp" />
+							<img class="content-wrapper__image" src="img/symbol-active-3.png" alt="Символ #3" />
+						</picture>
+					</div>
+					<div class="content-wrapper__item content-wrapper__item--fourth">
+						<!--Пустой невыбранный квадрат с символом-->
+						<picture class="content-wrapper__frame content-wrapper__frame--empty">
+							<source scrset="img/symbol-empty-4.webp" type="image/webp" />
+							<img class="content-wrapper__image" src="img/symbol-empty-4.png" alt="Символ #4" />
+						</picture>
+						<!--Выбранный квадрат с символом-->
+						<picture class="content-wrapper__frame content-wrapper__frame--active">
+							<source scrset="img/symbol-active-4.webp" type="image/webp" />
+							<img class="content-wrapper__image" src="img/symbol-active-4.png" alt="Символ #4" />
+						</picture>
+					</div>
+					<div class="content-wrapper__item content-wrapper__item--fifth">
+						<!--Пустой невыбранный квадрат с символом-->
+						<picture class="content-wrapper__frame content-wrapper__frame--empty">
+							<source scrset="img/symbol-empty-5.webp" type="image/webp" />
+							<img class="content-wrapper__image" src="img/symbol-empty-5.png" alt="Символ #5" />
+						</picture>
+						<!--Выбранный квадрат с символом-->
+						<picture class="content-wrapper__frame content-wrapper__frame--active">
+							<source scrset="img/symbol-active-5.webp" type="image/webp" />
+							<img class="content-wrapper__image" src="img/symbol-active-5.png" alt="Символ #5" />
+						</picture>
+					</div>
+					<div class="content-wrapper__item content-wrapper__item--sixth">
+						<!--Пустой невыбранный квадрат с символом-->
+						<picture class="content-wrapper__frame content-wrapper__frame--empty">
+							<source scrset="img/symbol-empty-6.webp" type="image/webp" />
+							<img class="content-wrapper__image" src="img/symbol-empty-6.png" alt="Символ #6" />
+						</picture>
+						<!--Выбранный квадрат с символом-->
+						<picture class="content-wrapper__frame content-wrapper__frame--active">
+							<source scrset="img/symbol-active-6.webp" type="image/webp" />
+							<img class="content-wrapper__image" src="img/symbol-active-6.png" alt="Символ #6" />
+						</picture>
+					</div>
+					<div class="content-wrapper__item content-wrapper__item--seventh">
+						<!--Пустой невыбранный квадрат с символом-->
+						<picture class="content-wrapper__frame content-wrapper__frame--empty">
+							<source scrset="img/symbol-empty-7.webp" type="image/webp" />
+							<img class="content-wrapper__image" src="img/symbol-empty-7.png" alt="Символ #7" />
+						</picture>
+						<!--Выбранный квадрат с символом-->
+						<picture class="content-wrapper__frame content-wrapper__frame--active">
+							<source scrset="img/symbol-active-7.webp" type="image/webp" />
+							<img class="content-wrapper__image" src="img/symbol-active-7.png" alt="Символ #7" />
+						</picture>
+					</div>
+					<div class="content-wrapper__item content-wrapper__item--eighth">
+						<!--Пустой невыбранный квадрат с символом-->
+						<picture class="content-wrapper__frame content-wrapper__frame--empty">
+							<source scrset="img/symbol-empty-8.webp" type="image/webp" />
+							<img class="content-wrapper__image" src="img/symbol-empty-8.png" alt="Символ #8" />
+						</picture>
+						<!--Выбранный квадрат с символом-->
+						<picture class="content-wrapper__frame content-wrapper__frame--active">
+							<source scrset="img/symbol-active-8.webp" type="image/webp" />
+							<img class="content-wrapper__image" src="img/symbol-active-8.png" alt="Символ #8" />
+						</picture>
+					</div>
+					<div class="content-wrapper__item content-wrapper__item--nineth">
+						<!--Пустой невыбранный квадрат с символом-->
+						<picture class="content-wrapper__frame content-wrapper__frame--empty">
+							<source scrset="img/symbol-empty-9.webp" type="image/webp" />
+							<img class="content-wrapper__image" src="img/symbol-empty-9.png" alt="Символ #9" />
+						</picture>
+						<!--Выбранный квадрат с символом-->
+						<picture class="content-wrapper__frame content-wrapper__frame--active">
+							<source scrset="img/symbol-active-9.webp" type="image/webp" />
+							<img class="content-wrapper__image" src="img/symbol-active-9.png" alt="Символ #9" />
+						</picture>
+					</div>
+				</div>
+				<button class="main-content__submit" type="submit">Выбрать</button>
+				<!--Выдвигающаяся панель про участие-->
+				<div class="main-content__slide slide-panel">
+					<button class="open-btn" type="button"><span class="btn-span">Как участвовать</span></button>
+					<div class="top-panel">
+						<button class="top-panel__close" type="button"></button>
+						<ul class="top-panel__list panel-list">
+							<li class="panel-list__item">
+								<span class="panel-list__text">1. Смотри Nickelodeon каждый день с 9:00 до 19:00 МСК</span>
+							</li>
+							<li class="panel-list__item">
+								<span class="panel-list__text">2. Лови появляющиеся символы</span>
+							</li>
+							<li class="panel-list__item">
+								<span class="panel-list__text">3. Выбери правильные на сайте</span>
+							</li>
+							<li class="panel-list__item">
+								<span class="panel-list__text">4. Выиграй билеты в кино</span>
+							</li>
+							<li class="panel-list__item">
+								<span class="panel-list__text">5. Набери 7 символов</span>
+							</li>
+							<li class="panel-list__item">
+								<span class="panel-list__text">6. Нарисуй аттракцион мечты</span>
+							</li>
+							<li class="panel-list__item">
+								<span class="panel-list__text">7. Выиграй путешествие в Nickelodeon Land Madrid</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!--Page footer-->
+		<footer class="footer">
+			<div class="footer__wrapper">
+				<!--Copyrights-->
+				<div class="footer__copyright">
+					<span class="footer__text">&copy; 2019 Paramount animation. A division of paramount pictures. All rights reserved.</span>
+					<span class="footer__text">&copy; 2019 Viacom. Все права защищены</span>
+				</div>
+				<!--Social media block-->
+				<ul class="footer__social social-list">
+					<li class="social-list__item">
+						<a class="social-list__link social-list__link--yt" href="#" target="_blank"></a>
+					</li>
+					<li class="social-list__item">
+						<a class="social-list__link social-list__link--fb" href="#" target="_blank"></a>
+					</li>
+					<li class="social-list__item">
+						<a class="social-list__link social-list__link--vk" href="#" target="_blank"></a>
+					</li>
+					<li class="social-list__item">
+						<a class="social-list__link social-list__link--tw" href="#" target="_blank"></a>
+					</li>
+					<li class="social-list__item">
+						<a class="social-list__link social-list__link--in" href="#" target="_blank"></a>
+					</li>
+					<li class="social-list__item">
+						<a class="social-list__link social-list__link--ok" href="#" target="_blank"></a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
