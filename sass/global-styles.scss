@@ -47,6 +47,20 @@ body {
   background-position: top center;
 }
 
+.body-event {
+  background-color: $bg-body;
+  background-image: url('../img/event-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.body-gallery {
+  background-color: $bg-body;
+  background-image: url('../img/gallery-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
 img {
   max-width: 100%;
   height: auto;
