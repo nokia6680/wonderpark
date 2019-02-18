@@ -27,15 +27,24 @@ body {
   position: relative;
   overflow-x: hidden;
 
-  background-color: $bg-body;
-  background-image: url('../img/index-bg.jpg');
-  background-repeat: no-repeat;
-  background-position: top center;
-
   color: $text-black;
   font-family: $regular-font;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.body-index {
+  background-color: $bg-body;
+  background-image: url('../img/index-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.body-tip {
+  background-color: $bg-body;
+  background-image: url('../img/tip-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 img {
