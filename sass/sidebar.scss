@@ -2,14 +2,17 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-end;
 
   width: 32.8%;
   height: 100%;
 
+  padding-top: 10px;
+  padding-right: 130px;
+
   &__logo {
     width: 483px;
-    height: 307px;
+    height: 336px;
 
     margin-bottom: 50px;
   }
