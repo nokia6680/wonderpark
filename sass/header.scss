@@ -1,0 +1,32 @@
+.header {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $bg-header;
+
+  box-shadow:0px 7px 20px 3px rgba(51,51,51,0.5);
+  -webkit-box-shadow:0px 7px 20px 3px rgba(51,51,51,0.5);
+  -moz-box-shadow:0px 7px 20px 3px rgba(51,51,51,0.5);
+
+  padding-top: 12px;
+  padding-bottom: 19px;
+
+  &__logo {
+    width: 202px;
+    height: 29px;
+  }
+
+  &__link {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+}

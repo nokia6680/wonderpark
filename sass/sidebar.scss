@@ -1,0 +1,42 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 32.8%;
+
+  &__logo {
+    width: 483px;
+    height: 307px;
+
+    margin-bottom: 5px;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  &__frame {
+    &--first {
+      width: 483px;
+      height: 307px;
+    }
+    &--second {
+      width: 340px;
+      height: 46px;
+    }
+  }
+
+  &__image,
+  &__date {
+    width: 100%;
+    height: 100%;
+  }
+}

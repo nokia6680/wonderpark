@@ -40,19 +40,21 @@
 			</nav>
 		</header>
 		<!--Page main part-->
-		<main class="main">
+		<main class="main main--index">
 			<!--Sidebar with logo and path to tip page-->
 			<div class="main__sidebar sidebar">
 				<!--Логотип фильма-->
 				<div class="sidebar__logo">
 					<a class="sidebar__link" href="#" target="_self">
-						<picture class="sidebar__frame">
+						<picture class="sidebar__frame sidebar__frame--first">
 							<source srcset="img/film-logo.webp" type="image/webp" />
 							<img class="sidebar__image" src="img/film-logo.png" alt="Волшебный парк Джун" />
 						</picture>
+						<picture class="sidebar__frame sidebar__frame--second">
+							<source srcset="img/film-logo.webp" type="image/webp" />
+							<img class="sidebar__date" src="img/date-logo.png" alt="Дата выхода в кино - 21ое марта" />
+						</picture>
 					</a>
-					<span class="sidebar__date">В кино с 21 марта</span>
-					<span class="sidebar__type">в 2D и 3D</span>
 				</div>
 				<!--Блок показа главного подарка, показывается всегда, кроме времени показа подсказки-->
 				<div class="sidebar__prize prize">
@@ -374,22 +376,22 @@
 				<!--Social media block-->
 				<ul class="footer__social social-list">
 					<li class="social-list__item">
-						<a class="social-list__link social-list__link--yt" href="#" target="_blank"></a>
+						<a class="social-list__link social-list__link--yt" href="#" target="_blank"><i class="fab fa-youtube"></i></a>
 					</li>
 					<li class="social-list__item">
-						<a class="social-list__link social-list__link--fb" href="#" target="_blank"></a>
+						<a class="social-list__link social-list__link--fb" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
 					</li>
 					<li class="social-list__item">
-						<a class="social-list__link social-list__link--vk" href="#" target="_blank"></a>
+						<a class="social-list__link social-list__link--vk" href="#" target="_blank"><i class="fab fa-vk"></i></a>
 					</li>
 					<li class="social-list__item">
-						<a class="social-list__link social-list__link--tw" href="#" target="_blank"></a>
+						<a class="social-list__link social-list__link--tw" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
 					</li>
 					<li class="social-list__item">
-						<a class="social-list__link social-list__link--in" href="#" target="_blank"></a>
+						<a class="social-list__link social-list__link--in" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
 					</li>
 					<li class="social-list__item">
-						<a class="social-list__link social-list__link--ok" href="#" target="_blank"></a>
+						<a class="social-list__link social-list__link--ok" href="#" target="_blank"><i class="fab fa-odnoklassniki"></i></a>
 					</li>
 				</ul>
 			</div>
