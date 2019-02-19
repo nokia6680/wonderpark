@@ -5,12 +5,13 @@
   align-items: center;
 
   width: 32.8%;
+  height: 100%;
 
   &__logo {
     width: 483px;
     height: 307px;
 
-    margin-bottom: 5px;
+    margin-bottom: 50px;
   }
 
   &__link {
@@ -27,10 +28,14 @@
     &--first {
       width: 483px;
       height: 307px;
+
+      margin-bottom: 5px;
     }
     &--second {
       width: 340px;
       height: 46px;
+
+      margin-left: 50px;
     }
   }
 
