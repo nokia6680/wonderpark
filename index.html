@@ -336,37 +336,37 @@
 						</div>
 					</div>
 					<button class="main-content__submit" type="submit">Выбрать</button>
-					<!--Выдвигающаяся панель про участие-->
-					<div class="main-content__slide slide-panel">
-						<button class="open-btn" type="button"><span class="btn-span">Как участвовать</span></button>
-						<div class="top-panel">
-							<button class="top-panel__close" type="button"></button>
-							<ul class="top-panel__list panel-list">
-								<li class="panel-list__item">
-									<span class="panel-list__text">1. Смотри Nickelodeon каждый день с 9:00 до 19:00 МСК</span>
-								</li>
-								<li class="panel-list__item">
-									<span class="panel-list__text">2. Лови появляющиеся символы</span>
-								</li>
-								<li class="panel-list__item">
-									<span class="panel-list__text">3. Выбери правильные на сайте</span>
-								</li>
-								<li class="panel-list__item">
-									<span class="panel-list__text">4. Выиграй билеты в кино</span>
-								</li>
-								<li class="panel-list__item">
-									<span class="panel-list__text">5. Набери 7 символов</span>
-								</li>
-								<li class="panel-list__item">
-									<span class="panel-list__text">6. Нарисуй аттракцион мечты</span>
-								</li>
-								<li class="panel-list__item">
-									<span class="panel-list__text">7. Выиграй путешествие в Nickelodeon Land Madrid</span>
-								</li>
-							</ul>
-						</div>
-					</div>
 				</section>
+				<!--Выдвигающаяся панель про участие-->
+				<div class="main__slide slide-panel">
+					<button class="open-btn" type="button"><span class="btn-span">Как&nbsp;участвовать</span></button>
+					<div class="top-panel">
+						<button class="top-panel__close" type="button"></button>
+						<ul class="top-panel__list panel-list">
+							<li class="panel-list__item">
+								<span class="panel-list__text">1. Смотри Nickelodeon каждый день с 9:00 до 19:00 МСК</span>
+							</li>
+							<li class="panel-list__item">
+								<span class="panel-list__text">2. Лови появляющиеся символы</span>
+							</li>
+							<li class="panel-list__item">
+								<span class="panel-list__text">3. Выбери правильные на сайте</span>
+							</li>
+							<li class="panel-list__item">
+								<span class="panel-list__text">4. Выиграй билеты в кино</span>
+							</li>
+							<li class="panel-list__item">
+								<span class="panel-list__text">5. Набери 7 символов</span>
+							</li>
+							<li class="panel-list__item">
+								<span class="panel-list__text">6. Нарисуй аттракцион мечты</span>
+							</li>
+							<li class="panel-list__item">
+								<span class="panel-list__text">7. Выиграй путешествие в Nickelodeon Land Madrid</span>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</main>
 		<!--Page footer-->
@@ -401,17 +401,20 @@
 			</div>
 		</footer>
 	</div>
+
 	<!--Регистрационные формы-->
-	<div class="popup-main" style="display: none;">
-		<!--Форма выбора действия - вход или регистрация-->
-		<div class="popup-main__enter popup-enter">
+	<!--Форма выбора действия - вход или регистрация-->
+	<div class="popup-enter" style="display: none;">
+		<div class="popup-enter__wrapper">
 			<button class="popup-enter__close closer" type="button"></button>
 			<button class="popup-enter__btn popup-enter__btn--register" type="button">Регистрация</button>
 			<button class="popup-enter__btn popup-enter__btn--enter" type="button">Вход</button>
 			<a class="popup-enter__recovery" href="#">Забыли пароль?</a>
 		</div>
-		<!--Форма регистрации-->
-		<div class="popup-main__register popup-register">
+	</div>
+	<!--Форма регистрации-->
+	<div class="popup-register" style="display: none;">
+		<div class="popup-register__wrapper">
 			<button class="popup-register__close closer" type="button"></button>
 			<h2 class="popup-register__title">Регистрация</h2>
 			<b class="popup-register__subtitle">Заполни форму ниже и отправь нам</b>
@@ -428,54 +431,58 @@
 						<span class="reg-list__error reg-list__error--tel">Ты забыл написать номер телефона!</span>
 					</li>
 					<li class="reg-list__item reg-list__item--agreement">
-						<input class="reg-list__input reg-list__input--agreement visually-hidden" type="checkbox" name="agree" id="agree" required checked />
-						<label class="reg-list__label reg-list__label--agreement" for="agree">Согласен на получение смс-рассылки и обработку персональных данных</label>
+						<input class="reg-list__checkbox reg-list__checkbox--agreement visually-hidden" type="checkbox" name="agree" id="agree" required checked />
+						<label class="reg-list__label reg-list__label--checkbox reg-list__label--agreement" for="agree">Согласен на получение смс-рассылки и обработку персональных данных</label>
 						<span class="reg-list__error reg-list__error--required">Это поле должно быть заполнено!</span>
 					</li>
 					<li class="reg-list__item reg-list__item--policy">
-						<input class="reg-list__input reg-list__input--policy visually-hidden" type="checkbox" name="policy" id="policy" required checked />
-						<label class="reg-list__label reg-list__label--policy" for="policy">Согласен с правилами проведения конкурсов</label>
+						<input class="reg-list__checkbox reg-list__checkbox--policy visually-hidden" type="checkbox" name="policy" id="policy" required checked />
+						<label class="reg-list__label reg-list__label--checkbox reg-list__label--policy" for="policy">Согласен с правилами проведения конкурсов</label>
 						<span class="reg-list__error reg-list__error--required">Это поле должно быть заполнено!</span>
 					</li>
 				</ul>
 				<h3 class="reg-form__title">Выбери аватар</h3>
 				<ul class="reg-form__avatar reg-avatar">
 					<li class="reg-avatar__item reg-avatar__item--dog">
-						<input class="reg-avatar__radio visually-hidden" type="radio" name="avatar" value="avatar-1" id="avatar-1" />
+						<input class="reg-avatar__radio reg-avatar__radio--dog visually-hidden" type="radio" name="avatar" value="avatar-1" id="avatar-1" />
 						<label class="reg-avatar__label reg-avatar__label--dog" for="avatar-1"><span class="visually-hidden">Собака</span></label>
 					</li>
 					<li class="reg-avatar__item reg-avatar__item--hedgehog">
-						<input class="reg-avatar__radio visually-hidden" type="radio" name="avatar" value="avatar-2" id="avatar-2" />
+						<input class="reg-avatar__radio reg-avatar__radio--hedgehog visually-hidden" type="radio" name="avatar" value="avatar-2" id="avatar-2" />
 						<label class="reg-avatar__label reg-avatar__label--hedgehog" for="avatar-2"><span class="visually-hidden">Ёж</span></label>
 					</li>
 					<li class="reg-avatar__item reg-avatar__item--monkey">
-						<input class="reg-avatar__radio visually-hidden" type="radio" name="avatar" value="avatar-3" id="avatar-3" />
+						<input class="reg-avatar__radio reg-avatar__radio--monkey visually-hidden" type="radio" name="avatar" value="avatar-3" id="avatar-3" />
 						<label class="reg-avatar__label reg-avatar__label--monkey" for="avatar-3"><span class="visually-hidden">Обезьяна</span></label>
 					</li>
 					<li class="reg-avatar__item reg-avatar__item--boar">
-						<input class="reg-avatar__radio visually-hidden" type="radio" name="avatar" value="avatar-4" id="avatar-4" />
+						<input class="reg-avatar__radio reg-avatar__radio--boar visually-hidden" type="radio" name="avatar" value="avatar-4" id="avatar-4" />
 						<label class="reg-avatar__label reg-avatar__label--boar" for="avatar-4"><span class="visually-hidden">Кабан</span></label>
 					</li>
 					<li class="reg-avatar__item reg-avatar__item--bear">
-						<input class="reg-avatar__radio visually-hidden" type="radio" name="avatar" value="avatar-5" id="avatar-5" />
+						<input class="reg-avatar__radio reg-avatar__radio--bear visually-hidden" type="radio" name="avatar" value="avatar-5" id="avatar-5" />
 						<label class="reg-avatar__label reg-avatar__label--bear" for="avatar-5"><span class="visually-hidden">Медведь</span></label>
 					</li>
 				</ul>
 				<button class="reg-form__submit" type="submit">Отправить</button>
 			</form>
 		</div>
-		<!--Форма входа в свою УЗ-->
-		<div class="popup-main__login popup-login">
+	</div>
+	<!--Форма входа в свою УЗ-->
+	<div class="popup-login" style="display: none;">
+		<div class="popup-login__wrapper">
 			<button class="popup-login__close closer" type="button"></button>
 			<form class="popup-login__form log-form">
 				<ul class="log-form__list log-list">
 					<li class="log-list__item">
 						<label class="log-list__label" for="phone">Номер телефона:</label>
 						<input class="log-list__input" type="tel" name="phone" id="phone" />
+						<span class="log-list__error log-list__error--phone">Такой номер не зарегистрирован!</span>
 					</li>
 					<li class="log-list__item">
 						<label class="log-list__label" for="password">Пароль:</label>
 						<input class="log-list__input" type="password" name="password" id="password" />
+						<span class="log-list__error log-list__error--password">Пароль введён неверно!</span>
 					</li>
 				</ul>
 				<a class="log-form__recovery" href="#" target="_self">Забыли пароль?</a>
@@ -485,26 +492,33 @@
 				<a class="popup-login__register" href="#" target="_self">Ещё не зарегистрированы?</a>
 			</div>
 		</div>
-		<!--Форма восстановления пароля-->
-		<div class="popup-main__recover popup-recover">
+	</div>
+	<!--Форма восстановления пароля-->
+	<div class="popup-recover" style="display: none;">
+		<div class="popup-recover__wrapper">
 			<button class="popup-recover__close closer" type="button"></button>
 			<h2 class="popup-recover__title">Забыли пароль?</h2>
 			<b class="popup-recover__subtitle">Оставьте свой номер телефона, пароль придет в виде СМС</b>
 			<form class="popup-recover__form recover-form" method="post" action="#">
 				<label class="recover-form__label" for="recover-phone">Номер телефона:</label>
 				<input class="recover-form__input" type="tel" name="recover-phone" id="recover-phone" />
+				<span class="recover-form__error">Данный номер телефона не зарегистрирован!</span>
 				<button class="recover-form__submit" type="submit">Отправить</button>
 			</form>
 		</div>
+	</div>
 		<!--Попап правильного ответа пользователя-->
-		<div class="popup-main__answer popup-answer">
+	<div class="popup-answer" style="display: none;">
+		<div class="popup-answer__wrapper">
 			<button class="popup-answer__close closer" type="button"></button>
 			<h2 class="popup-answer__title">Правильный ответ!</h2>
 			<!--Активно только если пользователь изначально не зарегистрирован-->
-			<a class="popup-answer__link" href="#" target="_self">Регистрация</a>
+			<button class="popup-answer__link" type="button">Регистрация</button>
 		</div>
+	</div>
 		<!--Попап неверного ответа пользователя-->
-		<div class="popup-main__mistake popup-mistake">
+	<div class="popup-mistake" style="display: none;">
+		<div class="popup-mistake__wrapper">
 			<button class="popup-mistake__close closer" type="button"></button>
 			<h2 class="popup-mistake__title">Неправильно!</h2>
 			<!--Подзаголовок для случая, если пользователь еще имеет попытки для ответа-->
@@ -512,7 +526,7 @@
 			<!--Подзаголовок для случая, кодга попытки закончились-->
 			<b class="popup-mistake__subtitle popup-mistake__subtitle--over">Ты не угадал, но приходи вечером</b>
 			<!--Кнопка активна только если еще есть попытки ответа-->
-			<a class="popup-mistake__link" href="#" target="_self">Попробовать ещё</a>
+			<button class="popup-mistake__link" type="button">Попробовать ещё</button>
 		</div>
 	</div>
 	<!--Всплывающие попапы персноажей и видео-->

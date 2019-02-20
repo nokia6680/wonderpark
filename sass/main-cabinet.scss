@@ -25,6 +25,9 @@
   &__close {
     position: absolute;
 
+    cursor: pointer;
+    outline: none;
+
     top: -10px;
     right: 40px;
 
@@ -58,6 +61,9 @@
 
     display: block;
     position: relative;
+
+    cursor: pointer;
+    outline: none;
 
     box-shadow:0px 1px 13px 0px rgba(4,4,4,0.3);
     -webkit-box-shadow:0px 1px 13px 0px rgba(4,4,4,0.3);

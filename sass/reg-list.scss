@@ -1,0 +1,134 @@
+.reg-list {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin-bottom: 14px;
+
+    position: relative;
+
+    width: 100%;
+
+    &--agreement {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__label {
+    font: {
+      size: 1.125em;
+      family: $regular-font;
+      weight: 700;
+    }
+
+    color: $text-black;
+    line-height: 1;
+    text-transform: uppercase;
+
+    &--checkbox {
+      font: {
+        size: 0.863em;
+        family: $regular-font;
+        weight: 700;
+      }
+
+      line-height: 1;
+      text-transform: uppercase;
+      text-align: left;
+    }
+
+    &--policy {
+      padding-bottom: 5px;
+    }
+  }
+
+  &__input {
+    width: 100%;
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #000000;
+
+    padding-left: 5px;
+    padding-bottom: 7px;
+    padding-right: 5px;
+
+    cursor: text;
+    outline: none;
+
+    font: {
+      size: 1.594em;
+      family: $regular-font;
+      weight: 700;
+    }
+
+    color: $text-orange;
+    line-height: 1;
+    text-transform: uppercase;
+
+    &:hover {
+      border-color: $text-orange;
+    }
+
+    &:focus {
+      border-color: $text-orange;
+    }
+  }
+
+  &__error {
+    font: {
+      size: 0.563em;
+      family: $regular-font;
+      weight: 700;
+    }
+
+    color: $text-error;
+    line-height: 1;
+    text-transform: uppercase;
+
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+  }
+
+  &__checkbox:hover + label::before {
+    border-color: $text-orange;
+  }
+
+  &__checkbox--agreement + label {
+    @include checkbox-default-first;
+  }
+
+  &__checkbox--agreement + label::before {
+    @include custom-checkbox-first;
+  }
+
+  &__checkbox--agreement:checked + label::after {
+    @include checkbox-checked-first;
+  }
+
+  &__checkbox--policy + label {
+    @include checkbox-default-second;
+  }
+
+  &__checkbox--policy + label::before {
+    @include custom-checkbox-second;
+  }
+
+  &__checkbox--policy:checked + label::after {
+    @include checkbox-checked-second;
+  }
+}
