@@ -113,3 +113,18 @@ if (modalEventSearch) {
     }
   });
 }
+
+
+/*Слайдер в попапе персонажей*/
+$(document).ready(function(){
+  $('.chars-slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+		fade: true,
+    arrows: true,
+		prevArrow: '<div class="prev-1"></div>',
+		nextArrow: '<div class="next-1"></div>'
+  });
+});

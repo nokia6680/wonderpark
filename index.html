@@ -10,7 +10,9 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<!--[if lt IE 9]>
@@ -530,15 +532,16 @@
 		</div>
 	</div>
 	<!--Всплывающие попапы персноажей и видео-->
-	<div class="popup-secondary" style="display: none;">
-		<!--Попап с видео-->
-		<div class="popup-secondary__video popup-video" id="show-video">
-			<button class="popup-secondary__close closer" type="button"></button>
-			<iframe class="player" src="#" frameborder="0" allowfullscreen></iframe>
-			<a href="" onclick="void(0)" class="close"></a>
+	<!--Попап с видео-->
+	<div class="popup-video" style="display: none;">
+		<div class="popup-video__wrapper">
+			<button class="popup-video__close closer" type="button"></button>
+			<iframe class="popup-video__player" src="https://www.youtube.com/embed/tl-M6AYS-tI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
-		<!--Попап со слайдером персонажей-->
-		<div class="popup-secondary__chars popup-chars">
+	</div>
+	<!--Попап со слайдером персонажей-->
+	<div class="popup-chars" style="display: none;">
+		<div class="popup-chars__wrapper">
 			<button class="popup-chars__close closer" type="button"></button>
 			<div class="popup-chars__slider chars-slider">
 				<!---->
@@ -572,6 +575,8 @@
 						- математика, инженерия и строительство. После того как её мама заболевает и отправляется на лечение, героиня теряет уверенность в своих силах и интерес к парку.</p>
 				</div>
 			</div>
+			<div class="prev-1"></div>
+			<div class="next-1"></div>
 		</div>
 	</div>
 	<script src="js/script.js"></script>

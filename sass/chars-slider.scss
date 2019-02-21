@@ -1,0 +1,60 @@
+.chars-slider {
+  position: relative;
+
+  &:not(.slick-initialized) {
+    visibility: hidden;
+    display: flex;
+    max-width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+
+  /*Кнопки*/
+  .prev-1 {
+    position: absolute;
+
+    width: 32px;
+    height: 32px;
+
+    border: none;
+
+    z-index: 10;
+
+    top: 45%;
+    left: -50px;
+
+    background-image: url('../img/arrow-left.png');
+    background-size: 19px 32px;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+
+    transition: 0.2s ease-in;
+
+    cursor: pointer;
+    outline: none;
+  }
+
+  .next-1 {
+    position: absolute;
+
+    width: 32px;
+    height: 32px;
+
+    border: none;
+
+    z-index: 10;
+
+    top: 45%;
+    right: -50px;
+
+    background-image: url('../img/arrow-right.png');
+    background-size: 19px 32px;
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+
+    transition: 0.2s ease-in;
+
+    cursor: pointer;
+    outline: none;
+  }
+}
