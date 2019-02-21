@@ -40,28 +40,26 @@
 			</nav>
 		</header>
 		<!--Page main part-->
-		<main class="main">
+		<main class="main main--event">
 			<div class="main__upper">
 				<!--Блок логотипа-->
 				<div class="main__logo main-logo">
 					<a class="main-logo__link" href="#" target="_self">
-						<picture class="main-logo__frame">
-							<source srcset="img/film-logo-event.webp" type="image/webp" />
-							<img class="main-logo__image" src="img/film-logo-event.png" alt="Волшебный парк Джун" />
+						<picture class="main-logo__frame main-logo__frame--event">
+							<source srcset="img/film-logo.webp" type="image/webp" />
+							<img class="main-logo__image main-logo__image--event" src="img/film-logo.png" alt="Волшебный парк Джун" />
 						</picture>
 					</a>
-					<span class="main-logo__date">В кино с 21 марта</span>
-					<span class="main-logo__type">в 2D и 3D</span>
 				</div>
 				<!--Блок управляющих кнопок-->
-				<div class="main__nav main-nav">
+				<div class="main__nav main-nav main-nav--event">
 					<div class="main-nav__container">
 						<!--кнопка "на главную"-->
 						<a class="main-nav__btn main-nav__btn--index" href="index.html" target="_self">
 	            <span class="main-nav__text">На главную</span>
 	          </a>
 						<!--Блок кнопки и списка "Фильм"-->
-						<div class="main-nav__wrapper main-nav__wrapper--film">
+						<div class="main-nav__wrapper main-nav__wrapper--film main-nav__wrapper--eventpage">
 							<button class="main-nav__btn main-nav__btn--film" type="button">
 	              <span class="main-nav__text">Фильм</span>
 	            </button>
@@ -104,7 +102,7 @@
 						в Испании.</p>
 				</div>
 				<!--Блок Учетной записи-->
-				<div class="main__cabinet main-cabinet">
+				<div class="main__cabinet main-cabinet main-cabinet--event">
 					<div class="main-cabinet__avatar">
 						<button class="main-cabinet__close" type="button"></button>
 						<picture class="main-cabinet__frame">
@@ -200,7 +198,7 @@
 						</li>
 					</ul>
 					<!--Кнопка участия в конкурсе, когда собраны все 7 символов-->
-					<a class="main-cabinet__btn" href="event.html">
+					<a class="main-cabinet__btn main-cabinet__btn--event" href="event.html">
 						<span class="main-cabinet__text">Участвовать в конкурсе</span>
 					</a>
 				</div>
@@ -209,47 +207,52 @@
 			<section class="main__upload main-upload">
 				<div class="main-upload__wrapper">
 					<div class="main-upload__details">
-						<img class="main-upload__avatar" src="img/upload-avatar.png" alt="Avatar-1" />
+						<div class="main-upload__person">
+							<img class="main-upload__avatar" src="img/personal-photo.png" alt="Avatar-1" />
+						</div>
 						<b class="main-upload__name">Анатолий М.</b>
 					</div>
 					<form class="main-upload__form upload-form" method="post" action="#">
 						<p class="upload-form__description">Чтобы отправить свой рисунок на конкурс, перетащи его сюда или нажми кнопку ниже</p>
-						<input type="file" name="file" id="file" class="upload-form__input inputfile" />
+						<input type="file" name="file" id="file" class="upload-form__input inputfile visually-hidden" data-multiple-caption="{count} files selected" multiple />
 						<label class="upload-form__label" for="file">Выбрать рисунок</label>
 						<button class="upload-form__submit" type="submit">Отправить</button>
 					</form>
-				</div>
-				<!--Выдвигающаяся панель про участие-->
-				<div class="main-upload__slide main-content__slide slide-panel">
-					<button class="open-btn" type="button"><span class="btn-span">Как участвовать</span></button>
-					<div class="top-panel">
-						<button class="top-panel__close" type="button"></button>
-						<ul class="top-panel__list panel-list">
-							<li class="panel-list__item">
-								<span class="panel-list__text">1. Смотри Nickelodeon каждый день с 9:00 до 19:00 МСК</span>
-							</li>
-							<li class="panel-list__item">
-								<span class="panel-list__text">2. Лови появляющиеся символы</span>
-							</li>
-							<li class="panel-list__item">
-								<span class="panel-list__text">3. Выбери правильные на сайте</span>
-							</li>
-							<li class="panel-list__item">
-								<span class="panel-list__text">4. Выиграй билеты в кино</span>
-							</li>
-							<li class="panel-list__item">
-								<span class="panel-list__text">5. Набери 7 символов</span>
-							</li>
-							<li class="panel-list__item">
-								<span class="panel-list__text">6. Нарисуй аттракцион мечты</span>
-							</li>
-							<li class="panel-list__item">
-								<span class="panel-list__text">7. Выиграй путешествие в Nickelodeon Land Madrid</span>
-							</li>
-						</ul>
+					<div class="main-upload__bottom">
+
 					</div>
 				</div>
 			</section>
+			<!--Выдвигающаяся панель про участие-->
+			<div class="main__slide slide-panel slide-panel--event">
+				<button class="open-btn" type="button"><span class="btn-span">Как&nbsp;участвовать</span></button>
+				<div class="top-panel">
+					<button class="top-panel__close" type="button"></button>
+					<ul class="top-panel__list panel-list">
+						<li class="panel-list__item">
+							<span class="panel-list__text">1. Смотри Nickelodeon каждый день с 9:00 до 19:00 МСК</span>
+						</li>
+						<li class="panel-list__item">
+							<span class="panel-list__text">2. Лови появляющиеся символы</span>
+						</li>
+						<li class="panel-list__item">
+							<span class="panel-list__text">3. Выбери правильные на сайте</span>
+						</li>
+						<li class="panel-list__item">
+							<span class="panel-list__text">4. Выиграй билеты в кино</span>
+						</li>
+						<li class="panel-list__item">
+							<span class="panel-list__text">5. Набери 7 символов</span>
+						</li>
+						<li class="panel-list__item">
+							<span class="panel-list__text">6. Нарисуй аттракцион мечты</span>
+						</li>
+						<li class="panel-list__item">
+							<span class="panel-list__text">7. Выиграй путешествие в Nickelodeon Land Madrid</span>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</main>
 		<!--Page footer-->
 		<footer class="footer">
@@ -283,16 +286,20 @@
 			</div>
 		</footer>
 	</div>
-	<!--Попап удачной загрузки-->
-	<div class="popup-upload">
-		<!--Удачная загрузка-->
-		<div class="popup-upload__success success-upload">
+	<!--Попап загрузки-->
+	<!--Удачная загрузка-->
+	<div class="success-upload" style="display: none;">
+		<div class="success-upload__wrapper">
+			<button class="success-upload__close closer"></button>
 			<p class="success-upload__description">Мы получили твой рисунок на конкурс.</p>
-			<p class="success-upload__description">Скоро он появится в галерее.</p>
+			<p class="success-upload__description">Скоро он появится в&nbsp;галерее.</p>
 		</div>
+	</div>
 		<!--Неудачная загрузка-->
-		<div class="popup-upload__unsuccess unsuccess-upload">
-			<p class="unsuccess-upload__description">Загрузка рисунка не удалась.</p>
+	<div class="unsuccess-upload" style="display: none;">
+		<div class="unsuccess-upload__wrapper">
+			<button class="unsuccess-upload__close closer"></button>
+			<p class="unsuccess-upload__description">Загрузка рисунка не&nbsp;удалась.</p>
 			<p class="unsuccess-upload__description">Попробуй загрузить рисунок ещё раз!</p>
 		</div>
 	</div>

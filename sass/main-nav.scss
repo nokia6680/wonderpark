@@ -19,6 +19,10 @@
       margin-left: 100px;
       margin-right: 20px;
     }
+
+    &--eventpage {
+      margin-left: 20px;
+    }
   }
   /*Кнопки*/
   &__btn {
@@ -47,6 +51,15 @@
 
     &--event {
       background-color: $btn-event;
+    }
+
+    &--index {
+      background-color: $bg-white;
+      text-decoration: none;
+
+      .main-nav__text {
+        color: $text-black;
+      }
     }
   }
   /*Стилизация текста внутри кнопок*/
@@ -146,5 +159,45 @@
     &--event {
       color: $btn-event;
     }
+  }
+  /*Стилизация шапки блока для страницы Event*/
+  &--event {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 51%;
+
+    margin-left: 60px;
+    z-index: 0;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__description {
+    display: block;
+
+    max-width: 980px;
+
+    font: {
+      size: 1.875em;
+      family: $regular-font;
+      weight: 700;
+    }
+
+    color: $text-white;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-top: 70px;
+    margin-bottom: 30px;
+
+    z-index: -4;
   }
 }

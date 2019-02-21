@@ -16,4 +16,19 @@
 
     position: relative;
   }
+  /*Стилизация для страниц Event и Gallery*/
+  &--event {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 100%;
+  }
 }

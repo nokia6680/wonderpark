@@ -12,7 +12,7 @@
 
   &__logo {
     width: 483px;
-    height: 336px;
+    height: 365px;
 
     margin-bottom: 50px;
   }
@@ -28,18 +28,8 @@
   }
 
   &__frame {
-    &--first {
-      width: 483px;
-      height: 307px;
-
-      margin-bottom: 5px;
-    }
-    &--second {
-      width: 340px;
-      height: 46px;
-
-      margin-left: 50px;
-    }
+    width: 483px;
+    height: 365px;
   }
 
   &__image,
