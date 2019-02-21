@@ -10,6 +10,10 @@
   margin-bottom: 20px;
 
   border: 2px solid #ffffff;
+  /*Страница совет*/
+  &--tip {
+    margin-bottom: 30px;
+  }
   /*Стилизация элемента*/
   &__item {
     width: 178px;

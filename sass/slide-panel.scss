@@ -9,6 +9,11 @@
 
   display: block;
 
+  &--tip {
+    top: 85%;
+    transform: translateY(-85%);
+  }
+
   .top-panel {
     position: fixed;
     top: 50%;
@@ -29,6 +34,11 @@
     border-bottom-left-radius: 40px;
 
     transition: 0.5s ease-in-out;
+
+    &--tip {
+      top: 85%;
+      transform: translateY(-85%);
+    }
 
     &--active {
       right: 0;
@@ -115,6 +125,11 @@
     -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
 
     z-index: 1001;
+
+    &--tip {
+      top: 85%;
+      transform: translateY(-85%);
+    }
   }
 
   .btn-span {

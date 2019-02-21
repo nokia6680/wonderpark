@@ -9,6 +9,10 @@
   align-items: center;
 
   margin-top: -70px;
+  /*Страница совета*/
+  &--tip {
+    margin-top: -80px;
+  }
   /*Заголовок*/
   &__title {
     font: {
@@ -22,7 +26,40 @@
     text-transform: uppercase;
 
     text-align: center;
+    /*Страница совета*/
+    &--tip {
+      display: block;
+      width: 720px;
+
+      margin-bottom: 30px;
+    }
   }
+  /*Страница совета*/
+  &__question {
+    display: block;
+
+    width: 780px;
+
+    text-align: center;
+
+    background:-webkit-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0) 100%);
+    background:-o-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0) 100%);
+    background:-moz-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0) 100%);
+    background:linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0) 100%);
+
+    font: {
+      size: 2.125em;
+      family: $regular-font;
+      weight: 700;
+    }
+
+    color: $text-white;
+    line-height: normal;
+    text-transform: uppercase;
+
+    margin-bottom: 30px;
+  }
+
   /*Кнопка отправки ответа*/
   &__submit {
     width: 196px;
@@ -44,6 +81,9 @@
     text-transform: uppercase;
 
     text-align: center;
+
+    cursor: pointer;
+    outline: none;
 
     box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.48);
     -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.48);
