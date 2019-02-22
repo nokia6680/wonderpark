@@ -1,3 +1,20 @@
+$(document).on("click", ".controls-filter__btn", function() {
+  var numberIndex = $(this).index();
+
+  if (!$(this).is("controls-filter__btn--active")) {
+    $(".controls-filter__btn").removeClass("controls-filter__btn--active");
+    $(".controls-filter__text").removeClass("controls-filter__text--active");
+
+    $(this).addClass("controls-filter__btn--active");
+    $(".controls-filter__description").find("b:eq(" + numberIndex + ")").addClass("controls-filter__text--active");
+
+    var listItemHeight = $(".controls-filter__description")
+      .find("b:eq(" + numberIndex + ")")
+      .innerHeight();
+    $(".controls-filter__description").height(listItemHeight + "px");
+  }
+});
+
 $(document).on("click", ".content-wrapper__item", function(){
 	$(this).toggleClass("content-wrapper__item--active");
 });
@@ -126,5 +143,18 @@ $(document).ready(function(){
     arrows: true,
 		prevArrow: '<div class="prev-1"></div>',
 		nextArrow: '<div class="next-1"></div>'
+  });
+});
+
+/*Слайдер gallery*/
+$(document).ready(function(){
+  $('.gallery-carousel').slick({
+    infinite: true,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: true,
+		prevArrow: '<div class="prev-2"></div>',
+		nextArrow: '<div class="next-2"></div>'
   });
 });

@@ -23,6 +23,10 @@
     &--eventpage {
       margin-left: 20px;
     }
+
+    &--gallerypage {
+      margin-left: 20px;
+    }
   }
   /*Кнопки*/
   &__btn {
@@ -162,6 +166,17 @@
   }
   /*Стилизация шапки блока для страницы Event*/
   &--event {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 51%;
+
+    margin-left: 60px;
+    z-index: 0;
+  }
+
+  &--gallery {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;

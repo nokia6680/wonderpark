@@ -15,6 +15,13 @@
     width: 26.5%;
   }
 
+  &--gallery {
+    align-self: flex-start;
+    margin-top: 55px;
+    margin-left: 5px;
+    width: 26.5%;
+  }
+
   &__avatar {
     order: 2;
     display: flex;
@@ -136,6 +143,10 @@
 
     &--event {
       left: -50px;
+    }
+
+    &--gallery {
+      left: -60px;
     }
   }
 
