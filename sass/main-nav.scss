@@ -197,10 +197,10 @@
   &__description {
     display: block;
 
-    max-width: 980px;
+    max-width: 950px;
 
     font: {
-      size: 1.875em;
+      size: 1.25em;
       family: $regular-font;
       weight: 700;
     }
@@ -210,7 +210,7 @@
     text-transform: uppercase;
     text-align: center;
 
-    margin-top: 70px;
+    margin-top: 25px;
     margin-bottom: 30px;
 
     z-index: -4;

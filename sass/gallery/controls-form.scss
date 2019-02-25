@@ -1,12 +1,12 @@
 .controls-form {
-  width: 50%;
+  width: 292px;
 
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
 
-  margin-right: 40px;
+  margin-right: 25px;
 
   &__input + label {
     font: {
