@@ -40,6 +40,14 @@ body {
   background-position: top center;
   background-size: cover;
 
+  @media only screen and (min-width: $laptop) {
+    background-color: $bg-body;
+    background-image: url('../img/index-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
   @media only screen and (min-width: $laptop-wide) {
     background-color: $bg-body;
     background-image: url('../img/index-bg.jpg');
@@ -55,6 +63,14 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+
+  @media only screen and (min-width: $laptop) {
+    background-color: $bg-body;
+    background-image: url('../img/tip-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
 
   @media only screen and (min-width: $laptop-wide) {
     background-color: $bg-body;
@@ -72,6 +88,11 @@ body {
   background-position: top center;
   background-size: cover;
 
+  @media only screen and (min-width: $laptop) {
+    background-image: url('../img/event-bg.jpg');
+    background-size: cover;
+  }
+
   @media only screen and (min-width: $laptop-wide) {
     background-image: url('../img/event-bg.jpg');
     background-size: auto;
@@ -84,6 +105,10 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+
+  @media only screen and (min-width: $laptop) {
+    background-size: cover;
+  }
 
   @media only screen and (min-width: $laptop-wide) {
     background-size: auto;

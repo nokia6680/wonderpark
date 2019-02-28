@@ -81,6 +81,51 @@
 
     &__description {
       display: block;
+      width: 310px;
+
+      font: {
+        size: 1.25em;
+        family: $regular-font;
+      }
+
+      color: $text-white;
+      line-height: normal;
+      text-align: center;
+
+      margin-bottom: 10px;
+    }
+
+    &__frame {
+      width: 144px;
+      height: 144px;
+
+      &::after {
+        background-size: 92px 92px;
+        background-repeat: no-repeat;
+
+        width: 92px;
+        height: 92px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop-wide) {
+  .prize {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-right: 20px;
+
+    &--event,
+    &--gallery {
+      display: none;
+    }
+
+    &__description {
+      display: block;
       width: 315px;
 
       font: {
@@ -127,8 +172,4 @@
       }
     }
   }
-}
-
-@media only screen and (min-width: $laptop-wide) {
-
 }

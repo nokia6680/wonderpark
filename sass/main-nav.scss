@@ -265,6 +265,220 @@
     justify-content: flex-start;
     align-items: flex-start;
 
+    /*Когда работает кнопка регистрации*/
+    &--unregistered {
+      margin-bottom: 55px;
+    }
+
+    /*Оболочка кнопок и списков*/
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+      position: relative;
+
+      &--film {
+        margin-left: 110px;
+        margin-right: 20px;
+      }
+
+      &--eventpage {
+        margin-left: 20px;
+      }
+
+      &--gallerypage {
+        margin-left: 20px;
+      }
+    }
+    /*Кнопки*/
+    &__btn {
+      width: 165px;
+      height: 45px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      border: none;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+
+      cursor: pointer;
+      outline: none;
+
+      box-shadow: 0px 1px 10px 2px rgba(4,4,4,0.25);
+      -webkit-box-shadow: 0px 1px 10px 2px rgba(4,4,4,0.25);
+      -moz-box-shadow: 0px 1px 10px 2px rgba(4,4,4,0.25);
+
+      &--film {
+        background-color: $btn-film;
+      }
+
+      &--event {
+        background-color: $btn-event;
+      }
+    }
+    /*Стилизация текста внутри кнопок*/
+    &__text {
+      font: {
+        size: 1.625em;
+        family: $regular-font;
+        weight: 700;
+      }
+
+      color: $text-white;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+    /*Кнопка входа, появляется, если юзер закрыл попап регистрации при первом входе*/
+    &__enter {
+      width: 268px;
+      height: 45px;
+
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      border: none;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+
+      cursor: pointer;
+      outline: none;
+
+      background-color: $btn-enter;
+      margin-left: auto;
+      margin-right: 5%;
+    }
+    /*Стилизация списков*/
+    &__list {
+      position: absolute;
+      left: 50%;
+      top: -300px;
+      transform: translateX(-50%);
+
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      padding-left: 10px;
+      padding-bottom: 10px;
+      padding-top: 30px;
+
+      background-color: rgba(255, 255, 255, 0.9);
+
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+
+      box-shadow: 0px 1px 10px 2px rgba(4,4,4,0.15);
+      -webkit-box-shadow: 0px 1px 10px 2px rgba(4,4,4,0.15);
+      -moz-box-shadow: 0px 1px 10px 2px rgba(4,4,4,0.15);
+
+      width: 144px;
+
+      z-index: -1;
+
+      transition: 0.5s ease-in-out;
+
+      &--active {
+        top: 20px;
+        transition: 0.5s ease-in-out;
+      }
+    }
+    /*Элементы списка*/
+    &__item {
+      width: 100%;
+
+      &:hover .main-nav__link {
+        color: $btn-text-hover;
+      }
+    }
+    /*Ссылки внутри*/
+    &__link {
+      width: 100%;
+      height: 100%;
+
+      font: {
+        size: 1em;
+        family: $regular-font;
+        weight: 700;
+      }
+      line-height: normal;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      &--film {
+        color: $btn-film;
+      }
+
+      &--event {
+        color: $btn-event;
+      }
+    }
+    /*Стилизация шапки блока для страницы Event*/
+    &--event {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+      width: 50%;
+      z-index: 0;
+    }
+
+    &--gallery {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+      width: 50%;
+
+      z-index: 0;
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    &__description {
+      display: block;
+
+      width: 650px;
+
+      font: {
+        size: 1.25em;
+        family: $regular-font;
+        weight: 700;
+      }
+
+      color: $text-white;
+      line-height: normal;
+      text-transform: uppercase;
+      text-align: center;
+
+      margin-top: 25px;
+      margin-bottom: 20px;
+
+      z-index: -4;
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop-wide) {
+  .main-nav {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
     /*Оболочка кнопок и списков*/
     &__wrapper {
       display: flex;

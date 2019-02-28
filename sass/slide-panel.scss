@@ -2,14 +2,6 @@
   display: none;
 }
 
-@media only screen and (min-width: 414px) {
-
-}
-
-@media only screen and (min-width: $tablet) {
-
-}
-
 @media only screen and (min-width: $laptop) {
   .slide-panel {
     position: absolute;
@@ -23,8 +15,8 @@
     display: block;
 
     &--tip {
-      top: 85%;
-      transform: translateY(-85%);
+      top: 95%;
+      transform: translateY(-95%);
     }
 
     .top-panel {

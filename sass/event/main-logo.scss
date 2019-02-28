@@ -48,7 +48,7 @@
 
 @media only screen and (min-width: $laptop) {
   .main-logo {
-    width: 18.6%;
+    width: 20%;
 
     display: flex;
     flex-direction: row;
@@ -61,12 +61,22 @@
       display: block;
 
       width: 357px;
-      height: 270px;
+      height: 210px;
+
+      &--gallery {
+        width: 203px;
+        height: 153px;
+      }
     }
 
     &__frame {
       width: 357px;
-      height: 270px;
+      height: 210px;
+
+      &--gallery {
+        width: 203px;
+        height: 153px;
+      }
     }
 
     &__image {
