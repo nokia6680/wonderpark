@@ -1,0 +1,24 @@
+.help-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    font: {
+      size: 0.906em;
+      family: $regular-font;
+      weight: 700;
+    }
+
+    color: $text-panel;
+  }
+}

@@ -22,9 +22,9 @@
 
     position: relative;
 
-    width: 410px;
+    width: 300px;
 
-    border-radius: 50px;
+    border-radius: 40px;
 
     background-color: $bg-white;
 
@@ -32,10 +32,10 @@
     -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.3);
     -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.3);
 
-    padding-top: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 26px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
   }
 
   &__close {
@@ -44,7 +44,7 @@
 
   &__title {
     font: {
-      size: 2.813em;
+      size: 1.25em;
       family: $regular-font;
       weight: 700;
     }
@@ -59,7 +59,7 @@
 
   &__subtitle {
     font: {
-      size: 1.25em;
+      size: 0.875em;
       family: $regular-font;
       weight: 700;
     }
@@ -70,4 +70,84 @@
 
     margin-bottom: 15px;
   }
+}
+
+@media only screen and (min-width: 414px) {
+
+}
+
+@media only screen and (min-width: $tablet) {
+  .popup-register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+      position: relative;
+
+      width: 410px;
+
+      border-radius: 50px;
+
+      background-color: $bg-white;
+
+      box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.3);
+      -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.3);
+      -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.3);
+
+      padding-top: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 26px;
+    }
+
+    &__title {
+      font: {
+        size: 2.813em;
+        family: $regular-font;
+        weight: 700;
+      }
+
+      color: $text-black;
+      line-height: 1;
+      text-transform: uppercase;
+
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    &__subtitle {
+      font: {
+        size: 1.25em;
+        family: $regular-font;
+        weight: 700;
+      }
+
+      color: $text-lightgray;
+      line-height: 1;
+      text-transform: uppercase;
+
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+
 }

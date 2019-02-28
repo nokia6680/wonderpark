@@ -10,7 +10,7 @@
     align-self: center;
 
     font: {
-      size: 1.875em;
+      size: 1em;
       family: $regular-font;
       weight: 700;
     }
@@ -29,8 +29,6 @@
 
     border: none;
     border-radius: 30px;
-
-    margin-top: 8px;
 
     background-color: $btn-symbol-submit;
 
@@ -52,5 +50,72 @@
     box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
     -webkit-box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
     -moz-box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
+  }
+}
+
+@media only screen and (min-width: 414px) {
+
+}
+
+@media only screen and (min-width: $tablet) {
+
+}
+
+@media only screen and (min-width: $laptop) {
+  .reg-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 100%;
+
+    &__title {
+      align-self: center;
+
+      font: {
+        size: 1.875em;
+        family: $regular-font;
+        weight: 700;
+      }
+
+      color: $text-black;
+      line-height: 1;
+
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    &__submit {
+      align-self: center;
+      width: 178px;
+      height: 44px;
+
+      border: none;
+      border-radius: 30px;
+
+      margin-top: 8px;
+
+      background-color: $btn-symbol-submit;
+
+      cursor: pointer;
+      outline: none;
+
+      font: {
+        size: 2em;
+        family: $regular-font;
+        weight: 700;
+      }
+
+      color: $text-white;
+      line-height: 1;
+      text-transform: uppercase;
+
+      text-align: center;
+
+      box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
+      -webkit-box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
+      -moz-box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
+    }
   }
 }

@@ -1,0 +1,44 @@
+.help-panel {
+  margin-top: auto;
+  margin-bottom: 0;
+
+  width: 100%;
+  height: 10px;
+  background-color: $bg-white;
+
+  position: relative;
+
+  &__btn {
+    position: absolute;
+    top: -22px;
+    left: 10px;
+    width: 140px;
+    height: 32px;
+
+    background-color: $bg-white;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+    font: {
+      size: 1em;
+      family: $regular-font;
+      weight: 600;
+    }
+
+    color: $text-black;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .help-panel {
+    display: none;
+  }
+}

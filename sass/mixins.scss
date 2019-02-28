@@ -18,15 +18,27 @@
   cursor: pointer;
 
   position: relative;
-  padding-left: 33px;
+  padding-left: 25px;
+
+  @media only screen and (min-width: 414px) {
+
+  }
+
+  @media only screen and (min-width: $tablet) {
+
+  }
+
+  @media only screen and (min-width: $laptop) {
+    padding-left: 33px;
+  }
 }
 @mixin custom-checkbox-first {
   position: absolute;
   content: "";
   display: block;
 
-  width: 26px;
-  height: 26px;
+  width: 20px;
+  height: 20px;
 
   bottom: 0;
   left: 0;
@@ -34,20 +46,50 @@
   background-color: transparent;
   border: 2px solid #000000;
   border-radius: 0;
+  @media only screen and (min-width: 414px) {
+
+  }
+
+  @media only screen and (min-width: $tablet) {
+
+  }
+
+  @media only screen and (min-width: $laptop) {
+    width: 26px;
+    height: 26px;
+  }
 }
 @mixin checkbox-checked-first {
   content: "";
   position: absolute;
-  top: 5px;
-  left: 4px;
+  top: 3px;
+  left: 3px;
   display: block;
-  width: 18px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
 
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 18 18'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bisolation:isolate;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Etick-checkbox%3C/title%3E%3Cg id='Слой_2' data-name='Слой 2'%3E%3Cg id='Слой_1-2' data-name='Слой 1'%3E%3Cimage id='Vector_Smart_Object' data-name='Vector Smart Object' class='cls-1' width='18' height='18' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsSAAALEgHS3X78AAABb0lEQVQ4T43TPWtUQRTG8d/cRhKwSJPCSkEsbOx8wUIsggYRIQpiKRY7pVZibbOVWF5B/ACLJBaJRCKxyYql38YuYzF7s3fnzrr+uznnzJmHc54JKSUgho+4jG1t+uNfxLCBQ/zUplfQzBIf8AJ3cCSGtWU9xLCJE1zHSzGMIaSRT3helB9iZ6AsKznAraL+fYMrhtxXKpsrKZvApQbbmFaSt7ELYjiHL7haqdvH45BSMnt5V1ZS8gPruFHJTfBMm05Db2trOJKV/A/72vSwOzRn4TzYLXnQq5jgUT8wV9QnhmPcHSbAnjbtlMG5oo4YzmO5j1gXw+DeYiD75BtuloU97uGgNG1/2JvyhmorrjHFVmfa7otsWO6TPVllSfbZTFlIIxfktdeaTLTpqRgCvqr7bIoHIY38xrVKwYJPVvjse4PjSmLgkxU+O+m+yBivZ8FFJSVDZW+0adzf2jtcxBNtOq31OCM3+4xf2vQW/gJMaHYqwmcJFwAAAABJRU5ErkJggg=='/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  background-size: 18px 18px;
+  background-size: 14px 14px;
   background-repeat: no-repeat;
   background-position: center center;
+
+  @media only screen and (min-width: 414px) {
+
+  }
+
+  @media only screen and (min-width: $tablet) {
+
+  }
+
+  @media only screen and (min-width: $laptop) {
+    top: 5px;
+    left: 4px;
+
+    width: 18px;
+    height: 18px;
+
+    background-size: 18px 18px;
+  }
 }
 /*Чекбокс второй*/
 @mixin checkbox-default-second {
@@ -56,15 +98,27 @@
   cursor: pointer;
 
   position: relative;
-  padding-left: 33px;
+  padding-left: 25px;
+
+  @media only screen and (min-width: 414px) {
+
+  }
+
+  @media only screen and (min-width: $tablet) {
+
+  }
+
+  @media only screen and (min-width: $laptop) {
+    padding-left: 33px;
+  }
 }
 @mixin custom-checkbox-second {
   position: absolute;
   content: "";
   display: block;
 
-  width: 26px;
-  height: 26px;
+  width: 20px;
+  height: 20px;
 
   bottom: 0;
   left: 0;
@@ -72,20 +126,50 @@
   background-color: transparent;
   border: 2px solid #000000;
   border-radius: 0;
+  @media only screen and (min-width: 414px) {
+
+  }
+
+  @media only screen and (min-width: $tablet) {
+
+  }
+
+  @media only screen and (min-width: $laptop) {
+    width: 26px;
+    height: 26px;
+  }
 }
 @mixin checkbox-checked-second {
   content: "";
   position: absolute;
-  top: -3px;
-  left: 4px;
+  top: -2px;
+  left: 3px;
   display: block;
-  width: 18px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
 
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 18 18'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bisolation:isolate;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Etick-checkbox%3C/title%3E%3Cg id='Слой_2' data-name='Слой 2'%3E%3Cg id='Слой_1-2' data-name='Слой 1'%3E%3Cimage id='Vector_Smart_Object' data-name='Vector Smart Object' class='cls-1' width='18' height='18' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsSAAALEgHS3X78AAABb0lEQVQ4T43TPWtUQRTG8d/cRhKwSJPCSkEsbOx8wUIsggYRIQpiKRY7pVZibbOVWF5B/ACLJBaJRCKxyYql38YuYzF7s3fnzrr+uznnzJmHc54JKSUgho+4jG1t+uNfxLCBQ/zUplfQzBIf8AJ3cCSGtWU9xLCJE1zHSzGMIaSRT3helB9iZ6AsKznAraL+fYMrhtxXKpsrKZvApQbbmFaSt7ELYjiHL7haqdvH45BSMnt5V1ZS8gPruFHJTfBMm05Db2trOJKV/A/72vSwOzRn4TzYLXnQq5jgUT8wV9QnhmPcHSbAnjbtlMG5oo4YzmO5j1gXw+DeYiD75BtuloU97uGgNG1/2JvyhmorrjHFVmfa7otsWO6TPVllSfbZTFlIIxfktdeaTLTpqRgCvqr7bIoHIY38xrVKwYJPVvjse4PjSmLgkxU+O+m+yBivZ8FFJSVDZW+0adzf2jtcxBNtOq31OCM3+4xf2vQW/gJMaHYqwmcJFwAAAABJRU5ErkJggg=='/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  background-size: 18px 18px;
+  background-size: 14px 14px;
   background-repeat: no-repeat;
   background-position: center center;
+
+  @media only screen and (min-width: 414px) {
+
+  }
+
+  @media only screen and (min-width: $tablet) {
+
+  }
+
+  @media only screen and (min-width: $laptop) {
+    top: -3px;
+    left: 4px;
+
+    width: 18px;
+    height: 18px;
+
+    background-size: 18px 18px;
+  }
 }
 /*Миксин для аватара общий*/
 @mixin radio-default {

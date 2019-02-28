@@ -11,24 +11,21 @@
   align-items: flex-start;
   flex-wrap: wrap;
 
-  padding-left: 32px;
-  padding-right: 32px;
-
   &__item {
     width: 74px;
     height: 74px;
 
     position: relative;
 
-    margin-bottom: 14px;
+    margin-bottom: 5px;
 
     &--hedgehog {
-      margin-left: 32px;
-      margin-right: 32px;
+      margin-left: 10px;
+      margin-right: 10px;
     }
 
     &--boar {
-      margin-right: 32px;
+      margin-right: 10px;
     }
   }
 
@@ -79,5 +76,99 @@
 
   &__radio--bear:checked + label::after {
     @include radio-checked-bear;
+  }
+}
+
+@media only screen and (min-width: 414px) {
+
+}
+
+@media only screen and (min-width: $tablet) {
+
+}
+
+@media only screen and (min-width: $laptop) {
+  .reg-avatar {
+    width: 100%;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    padding-left: 32px;
+    padding-right: 32px;
+
+    &__item {
+      width: 74px;
+      height: 74px;
+
+      position: relative;
+
+      margin-bottom: 14px;
+
+      &--hedgehog {
+        margin-left: 32px;
+        margin-right: 32px;
+      }
+
+      &--boar {
+        margin-right: 32px;
+      }
+    }
+
+    &__radio + label {
+      @include radio-default;
+    }
+    &__radio:hover + label::before {
+      border-color: $text-orange;
+    }
+
+    /*Кастомизация радиобаттона собаки*/
+    &__radio--dog + label::before {
+      @include custom-radio-dog;
+    }
+
+    &__radio--dog:checked + label::after {
+      @include radio-checked-dog;
+    }
+    /*Кастомизация радиобаттона ежа*/
+    &__radio--hedgehog + label::before {
+      @include custom-radio-hedgehog;
+    }
+
+    &__radio--hedgehog:checked + label::after {
+      @include radio-checked-hedgehog;
+    }
+
+    /*Кастомизация радиобаттона обезьяны*/
+    &__radio--monkey + label::before {
+      @include custom-radio-monkey;
+    }
+
+    &__radio--monkey:checked + label::after {
+      @include radio-checked-monkey;
+    }
+    /*Кастомизация радиобаттона кабана*/
+    &__radio--boar + label::before {
+      @include custom-radio-boar;
+    }
+
+    &__radio--boar:checked + label::after {
+      @include radio-checked-boar;
+    }
+    /*Кастомизация радиобаттона медведя*/
+    &__radio--bear + label::before {
+      @include custom-radio-bear;
+    }
+
+    &__radio--bear:checked + label::after {
+      @include radio-checked-bear;
+    }
   }
 }
