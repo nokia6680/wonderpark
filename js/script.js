@@ -15,8 +15,8 @@ $(document).on("click", ".controls-filter__btn", function() {
   }
 });
 
-$(document).on("click", ".content-wrapper__item", function(){
-	$(this).toggleClass("content-wrapper__item--active");
+$(document).on("click", ".content-wrapper__item", function() {
+  $(this).toggleClass("content-wrapper__item--active");
 });
 
 
@@ -133,28 +133,65 @@ if (modalEventSearch) {
 
 
 /*Слайдер в попапе персонажей*/
-$(document).ready(function(){
+$(document).ready(function() {
   $('.chars-slider').slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: false,
-		fade: true,
+    fade: true,
     arrows: true,
-		prevArrow: '<div class="prev-1"></div>',
-		nextArrow: '<div class="next-1"></div>'
+    prevArrow: '<div class="prev-1"></div>',
+    nextArrow: '<div class="next-1"></div>'
   });
 });
 
 /*Слайдер gallery*/
-$(document).ready(function(){
+$(document).ready(function() {
   $('.gallery-carousel').slick({
     infinite: true,
     slidesToShow: 6,
     slidesToScroll: 1,
     dots: false,
     arrows: true,
-		prevArrow: '<div class="prev-2"></div>',
-		nextArrow: '<div class="next-2"></div>'
+    prevArrow: '<div class="prev-2"></div>',
+    nextArrow: '<div class="next-2"></div>',
+    responsive: [{
+        breakpoint: 1366,
+        settings: {
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          dots: false,
+          arrows: true,
+          prevArrow: '<div class="prev-2"></div>',
+          nextArrow: '<div class="next-2"></div>',
+        }
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: false,
+          arrows: true,
+          prevArrow: '<div class="prev-2"></div>',
+          nextArrow: '<div class="next-2"></div>',
+        }
+      },
+      {
+        breakpoint: 720,
+        settings: {
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: false,
+          arrows: true,
+          prevArrow: '<div class="prev-2"></div>',
+          nextArrow: '<div class="next-2"></div>',
+        }
+      }
+    ]
   });
 });

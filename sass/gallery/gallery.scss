@@ -5,7 +5,29 @@
   justify-content: center;
   align-items: center;
 
-  padding-left: 80px;
-  padding-right: 80px;
-  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+@media only screen and (min-width: $tablet) {
+  .gallery {
+    width: 100%;
+
+    padding-left: 80px;
+    padding-right: 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .gallery {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 5px;
+  }
 }

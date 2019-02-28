@@ -68,16 +68,40 @@
 
   &__image {
     max-height: 80px;
-    max-width: 80px;
+    min-height: 80px;
   }
 }
 
-@media only screen and (min-width: 414px) {
-
-}
-
 @media only screen and (min-width: $tablet) {
+  .content-wrapper {
+    width: 538px;
 
+    &--tip {
+      margin-bottom: 20px;
+    }
+
+    /*Стилизация элемента*/
+    &__item {
+      width: 178px;
+      height: 178px;
+      border: 3px solid #ffffff;
+    }
+    /*Внутрянка для черных силуэтов*/
+    &__frame--empty {
+      width: 172px;
+      height: 172px;
+    }
+    /*Внутрянка для выбранного элемента*/
+    &__frame--active {
+      width: 172px;
+      height: 172px;
+    }
+
+    &__image {
+      max-height: 130px;
+      min-height: 130px;
+    }
+  }
 }
 
 @media only screen and (min-width: $laptop) {
@@ -86,85 +110,28 @@
 
 @media only screen and (min-width: $laptop-wide) {
   .content-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-
     width: 538px;
 
-    margin-bottom: 20px;
-
-    border: 2px solid #ffffff;
-    /*Страница совет*/
-    &--tip {
-      margin-bottom: 30px;
-    }
     /*Стилизация элемента*/
     &__item {
       width: 178px;
       height: 178px;
       border: 3px solid #ffffff;
-
-      cursor: pointer;
-
-      box-shadow: 0px 0px 20px 3px rgba(255,255,255,0.2);
-      -webkit-box-shadow: 0px 0px 20px 3px rgba(255,255,255,0.2);
-      -moz-box-shadow: 0px 0px 20px 3px rgba(255,255,255,0.2);
-
-      &--active {
-        width: 178px;
-        height: 178px;
-        border: 3px solid #ffffff;
-
-        cursor: pointer;
-
-        box-shadow: 0px 0px 20px 3px rgba(255,255,255,0.2);
-        -webkit-box-shadow: 0px 0px 20px 3px rgba(255,255,255,0.2);
-        -moz-box-shadow: 0px 0px 20px 3px rgba(255,255,255,0.2);
-
-        .content-wrapper__frame--empty {
-          display: none;
-        }
-
-        .content-wrapper__frame--active {
-          display: flex;
-        }
-      }
     }
     /*Внутрянка для черных силуэтов*/
     &__frame--empty {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      width: 100%;
-      height: 100%;
-
-      background-color: rgba(255, 255, 255, 0.35);
-
-      box-shadow: 0px 0px 20px 3px rgba(255,255,255,0.2)inset;
-      -webkit-box-shadow: 0px 0px 20px 3px rgba(255,255,255,0.2)inset;
-      -moz-box-shadow: 0px 0px 20px 3px rgba(255,255,255,0.2)inset;
+      width: 172px;
+      height: 172px;
     }
     /*Внутрянка для выбранного элемента*/
     &__frame--active {
-      display: none;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      width: 100%;
-      height: 100%;
-
-      background-color: $bg-white;
+      width: 172px;
+      height: 172px;
     }
 
     &__image {
-      max-height: 160px;
-      max-width: 160px;
+      max-height: 130px;
+      min-height: 130px;
     }
   }
 }

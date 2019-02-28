@@ -4,4 +4,24 @@
   justify-content: flex-start;
 
   align-items: center;
+
+  width: 140px !important;
+}
+
+@media only screen and (min-width: 414px) {
+  .gallery-slide {
+    width: 160px !important;
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .gallery-slide {
+    width: 260px !important;
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .gallery-slide {
+    width: 100% !important;
+  }
 }

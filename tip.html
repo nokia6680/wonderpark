@@ -84,7 +84,7 @@
 			<div class="main__sidebar sidebar">
 				<!--Логотип фильма-->
 				<div class="sidebar__logo">
-					<a class="sidebar__link" href="#" target="_self">
+					<a class="sidebar__link" href="index.html" target="_self">
 						<picture class="sidebar__frame sidebar__frame--first">
 							<source srcset="img/film-logo.webp" type="image/webp" />
 							<img class="sidebar__image" src="img/film-logo.png" alt="Волшебный парк Джун" />
@@ -107,7 +107,7 @@
 				<div class="sidebar__personal personal">
 					<button class="personal__enter" type="button" style="display: none;"></button>
 					<!--Область личного кабинета-->
-					<div class="personal__cabinet main-cabinet">
+					<div class="personal__cabinet main-cabinet main-cabinet--mobile">
 						<!--Аватар юзера-->
 						<div class="main-cabinet__avatar">
 							<button class="main-cabinet__close" type="button"></button>
@@ -120,7 +120,7 @@
 						<!--Выдвигающийся список-->
 						<div class="main-cabinet__popup">
 							<b class="main-cabinet__remain">Осталось всего<span class="main-cabinet__count">&nbsp;4&nbsp;</span>символа!</b>
-							<ul class="main-cabinet__result cabinet-result">
+							<ul class="main-cabinet__result cabinet-result  cabinet-result--mobile">
 							<li class="cabinet-result__item cabinet-result__item--first">
 								<!--Base image for uncaught symbol-->
 								<picture class="cabinet-result__frame cabinet-result__frame--empty">
@@ -283,8 +283,8 @@
 						<!--Кнопка Вход/Регистрация, доступна только, если юзер закрыл попап Вход/Регистрация-->
 						<button class="main-nav__enter" type="button">Регистрация/Вход</button>
 					</div>
-					<!--Область личного кабинета-->
-					<div class="main-header__cabinet main-cabinet">
+					<!--Область личного кабинета ( включена только на десктопах )-->
+					<div class="main-header__cabinet main-cabinet main-cabinet--desktop">
 						<div class="main-cabinet__avatar">
 							<button class="main-cabinet__close" type="button"></button>
 							<picture class="main-cabinet__frame">

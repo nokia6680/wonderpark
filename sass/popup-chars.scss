@@ -30,27 +30,8 @@
   }
 }
 
-@media only screen and (min-width: 414px) {
-
-}
-
 @media only screen and (min-width: $tablet) {
   .popup-chars {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.9);
-    z-index: 1000;
-
     &__wrapper {
       width: 438px;
       height: 552px;

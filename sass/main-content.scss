@@ -91,12 +91,51 @@
   }
 }
 
-@media only screen and (min-width: 414px) {
-
-}
 
 @media only screen and (min-width: $tablet) {
+  .main-content {
+    padding-left: 20px;
+    padding-right: 20px;
 
+    /*Заголовок*/
+    &__title {
+      display: block;
+      margin-top: 0;
+      margin-bottom: 5px;
+
+      font: {
+        size: 1.875em;
+      }
+
+      /*Страница совета*/
+      &--tip {
+        font-size: 1.75em;
+        margin-bottom: 10px;
+      }
+    }
+    /*Страница совета*/
+    &__question {
+      width: 700px;
+
+      font: {
+        size: 1.875em;
+      }
+
+      margin-bottom: 20px;
+    }
+
+    /*Кнопка отправки ответа*/
+    &__submit {
+      width: 195px;
+      height: 62px;
+
+      border-radius: 30px;
+
+      font: {
+        size: 2.5em;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: $laptop) {

@@ -9,4 +9,100 @@
 
     visibility: hidden;
   }
+
+  .slick-slide div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .prev-2 {
+    display: none;
+  }
+
+  .next-2 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .gallery-carousel {
+    width: 100%;
+
+    position: relative;
+
+    .prev-2 {
+      display: block;
+      position: absolute;
+
+      width: 49px;
+      height: 84px;
+
+      border: none;
+
+      z-index: 10;
+
+      top: 45%;
+      left: -50px;
+
+      background-image: url('../img/arrow-left.png');
+      background-size: 49px 84px;
+      background-repeat: no-repeat;
+      background-position: right center;
+
+      transition: 0.2s ease-in;
+
+      cursor: pointer;
+      outline: none;
+    }
+
+    .next-2 {
+      display: block;
+      position: absolute;
+
+      width: 49px;
+      height: 84px;
+
+      border: none;
+
+      z-index: 10;
+
+      top: 45%;
+      right: -50px;
+
+      background-image: url('../img/arrow-right.png');
+      background-size: 49px 84px;
+      background-repeat: no-repeat;
+      background-position: left center;
+
+      transition: 0.2s ease-in;
+
+      cursor: pointer;
+      outline: none;
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .gallery-carousel {
+    width: 100%;
+
+    &:not(.slick-initialized) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      visibility: hidden;
+    }
+
+    .next-2 {
+      display: none;
+    }
+
+    .prev-2 {
+      display: none;
+    }
+  }
 }

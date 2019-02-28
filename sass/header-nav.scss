@@ -16,12 +16,13 @@
   }
 }
 
-@media only screen and (min-width: 414px) {
-
-}
-
 @media only screen and (min-width: $tablet) {
-
+  .header-nav {
+    top: -900px;
+    &--active {
+      top: 78px;
+    }
+  }
 }
 
 @media only screen and (min-width: $laptop) {

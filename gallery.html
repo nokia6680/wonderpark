@@ -92,12 +92,12 @@
 						</picture>
 					</a>
 					<!--Блок показа главного подарка, показывается всегда, кроме времени показа подсказки-->
-					<div class="main-logo__prize prize" style="display: none;">
+					<div class="main-logo__prize prize prize--gallery" style="display: none;">
 						<p class="prize__description">Хочешь попасть в крутой парк аттракционов Nickelodeon Land Madrid?</p>
 						<div class="prize__frame"></div>
 					</div>
 					<!--Блок перехода на страницу подсказки, показывается только в определенное время-->
-					<div class="main-logo__hint hint">
+					<div class="main-logo__hint hint hint--gallery">
 						<p class="hint__description">Пропустил&nbsp;символ? Жми&nbsp;сюда,&nbsp;ответь&nbsp;на&nbsp;вопрос и получи подсказку.</p>
 						<a class="hint__link" href="tip.html" target="_self">
 							<span class="visually-hidden">Перейти</span>
@@ -287,10 +287,14 @@
 					</div>
 					<!--Кнопки загрузки изображения и фильтрации галереи-->
 					<div class="main-nav__controls main-controls">
+						<!--Кнопка переключения вида слайдера-->
+						<button class="main-controls__switch" type="button"></button>
 						<form class="main-controls__form controls-form" method="post" action="#">
 							<input type="file" name="file1" id="file1" class="controls-form__input visually-hidden" />
 							<label class="controls-form__label" for="file1">Загрузить рисунок</label>
 						</form>
+						<!--Ссылка на главную-->
+						<a class="main-controls__index" href="index.html" target="_self">На главную</a>
 						<!--Список кнопок фильтров-->
 						<div class="main-controls__filter controls-filter">
 							<!--Контейнер кнопок-->
@@ -309,7 +313,7 @@
 					</div>
 				</div>
 				<!--Блок Учетной записи-->
-				<div class="main__cabinet main-cabinet main-cabinet--gallery" style="display: none;">
+				<div class="main__cabinet main-cabinet main-cabinet--gallery">
 					<div class="main-cabinet__avatar">
 						<button class="main-cabinet__close" type="button"></button>
 						<picture class="main-cabinet__frame">
@@ -973,6 +977,8 @@
 						</article>
 					</div>
 				</div>
+				<div class="prev-2"></div>
+				<div class="next-2"></div>
 			</section>
 			<!--Выдвигающаяся панель про участие-->
 			<div class="main__slide main-content__slide slide-panel">
@@ -1007,6 +1013,10 @@
 		</main>
 		<!--Page footer-->
 		<footer class="footer">
+			<!--Блок как участвовать - только для мобильно-планшетных размеров-->
+			<div class="footer__help help-panel">
+				<button class="help-panel__btn" type="button">Как участвовать</button>
+			</div>
 			<div class="footer__wrapper">
 				<!--Copyrights-->
 				<div class="footer__copyright">
@@ -1037,6 +1047,35 @@
 			</div>
 		</footer>
 	</div>
+	<!--Попап помощи для мобильной версии-->
+	<div class="popup-help" style="display: none;">
+		<div class="popup-help__wrapper">
+			<button class="popup-help__close closer" type="button"></button>
+			<ul class="popup-help__list help-list">
+				<li class="help-list__item">
+					<span class="help-list__text">1. Смотри Nickelodeon каждый день с 9:00 до 19:00 МСК</span>
+				</li>
+				<li class="help-list__item">
+					<span class="help-list__text">2. Лови появляющиеся символы</span>
+				</li>
+				<li class="help-list__item">
+					<span class="help-list__text">3. Выбери правильные на сайте</span>
+				</li>
+				<li class="help-list__item">
+					<span class="help-list__text">4. Выиграй билеты в кино</span>
+				</li>
+				<li class="help-list__item">
+					<span class="help-list__text">5. Набери 7 символов</span>
+				</li>
+				<li class="help-list__item">
+					<span class="help-list__text">6. Нарисуй аттракцион мечты</span>
+				</li>
+				<li class="help-list__item">
+					<span class="help-list__text">7. Выиграй путешествие в Nickelodeon Land Madrid</span>
+				</li>
+			</ul>
+		</div>
+	</div>
 	<!--Попап загрузки-->
 	<!--Удачная загрузка-->
 	<div class="success-upload" style="display: none;">
@@ -1046,12 +1085,35 @@
 			<p class="success-upload__description">Скоро он появится в&nbsp;галерее.</p>
 		</div>
 	</div>
-		<!--Неудачная загрузка-->
+	<!--Неудачная загрузка-->
 	<div class="unsuccess-upload" style="display: none;">
 		<div class="unsuccess-upload__wrapper">
 			<button class="unsuccess-upload__close closer"></button>
 			<p class="unsuccess-upload__description">Загрузка рисунка не&nbsp;удалась.</p>
 			<p class="unsuccess-upload__description">Попробуй загрузить рисунок ещё раз!</p>
+		</div>
+	</div>
+	<!--Попап большого элемента из галереи-->
+	<div class="popup-gallery" style="display: none;">
+		<div class="popup-gallery__wrapper">
+			<button class="popup-gallery__close" type="button"></button>
+			<article class="popup-gallery__item">
+				<header class="popup-gallery__header">
+					<div class="popup-gallery__wrap">
+						<img class="popup-gallery__avatar" src="img/personal-photo.png" alt="Аватар участника" />
+					</div>
+					<b class="popup-gallery__name">Василий С.</b>
+				</header>
+				<picture class="popup-gallery__frame">
+					<source srcset="img/uploaded-pic.webp" type="image/webp" />
+					<img class="popup-gallery__pic" src="img/uploaded-pic.png" />
+				</picture>
+				<footer class="popup-gallery__footer">
+					<button class="popup-gallery__like" type="button"></button>
+					<b class="popup-gallery__count">345</b>
+					<button class="popup-gallery__search" type="button"></button>
+				</footer>
+			</article>
 		</div>
 	</div>
 	<script src="js/script.js"></script>

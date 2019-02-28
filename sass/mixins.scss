@@ -20,15 +20,7 @@
   position: relative;
   padding-left: 25px;
 
-  @media only screen and (min-width: 414px) {
-
-  }
-
   @media only screen and (min-width: $tablet) {
-
-  }
-
-  @media only screen and (min-width: $laptop) {
     padding-left: 33px;
   }
 }
@@ -46,17 +38,11 @@
   background-color: transparent;
   border: 2px solid #000000;
   border-radius: 0;
-  @media only screen and (min-width: 414px) {
-
-  }
 
   @media only screen and (min-width: $tablet) {
-
-  }
-
-  @media only screen and (min-width: $laptop) {
     width: 26px;
     height: 26px;
+    bottom: 1px;
   }
 }
 @mixin checkbox-checked-first {
@@ -73,15 +59,7 @@
   background-repeat: no-repeat;
   background-position: center center;
 
-  @media only screen and (min-width: 414px) {
-
-  }
-
   @media only screen and (min-width: $tablet) {
-
-  }
-
-  @media only screen and (min-width: $laptop) {
     top: 5px;
     left: 4px;
 
@@ -100,15 +78,7 @@
   position: relative;
   padding-left: 25px;
 
-  @media only screen and (min-width: 414px) {
-
-  }
-
   @media only screen and (min-width: $tablet) {
-
-  }
-
-  @media only screen and (min-width: $laptop) {
     padding-left: 33px;
   }
 }
@@ -126,15 +96,8 @@
   background-color: transparent;
   border: 2px solid #000000;
   border-radius: 0;
-  @media only screen and (min-width: 414px) {
-
-  }
 
   @media only screen and (min-width: $tablet) {
-
-  }
-
-  @media only screen and (min-width: $laptop) {
     width: 26px;
     height: 26px;
   }
@@ -153,15 +116,7 @@
   background-repeat: no-repeat;
   background-position: center center;
 
-  @media only screen and (min-width: 414px) {
-
-  }
-
   @media only screen and (min-width: $tablet) {
-
-  }
-
-  @media only screen and (min-width: $laptop) {
     top: -3px;
     left: 4px;
 

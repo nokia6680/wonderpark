@@ -58,19 +58,31 @@
   }
 }
 
-@media only screen and (min-width: 414px) {
-
-}
-
 @media only screen and (min-width: $tablet) {
+  .hint {
+    margin-left: auto;
+    margin-right: 30px;
 
+    padding-top: 13px;
+
+
+    &__link {
+      position: relative;
+
+      width: 110px;
+      height: 110px;
+
+      &::after {
+        width: 70px;
+        height: 86px;
+
+        background-size: 70px 86px;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: $laptop) {
-
-}
-
-@media only screen and (min-width: $laptop-wide) {
   .hint {
     display: flex;
     flex-direction: column;
@@ -78,6 +90,15 @@
     align-items: center;
 
     padding-right: 20px;
+    margin: 0;
+
+    &--event {
+      display: none;
+    }
+
+    &--gallery {
+      display: none;
+    }
 
     &__description {
       display: block;

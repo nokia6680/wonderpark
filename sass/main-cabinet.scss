@@ -8,6 +8,18 @@
 
   margin-right: 10px;
 
+  &--desktop {
+    display: none;
+  }
+
+  &--event {
+    display: none;
+  }
+
+  &--gallery {
+    display: none;
+  }
+
   &__avatar {
     display: flex;
     flex-direction: column;
@@ -40,7 +52,7 @@
     background-repeat: no-repeat;
 
     border: none;
-    border-radius: 50%;
+    border-radius: 9px;
     z-index: 2;
 
     box-shadow: 0px 0px 5px 0px rgba(51,51,51,0.6);
@@ -169,12 +181,69 @@
   }
 }
 
-@media only screen and (min-width: 414px) {
-
-}
-
 @media only screen and (min-width: $tablet) {
+  .main-cabinet {
+    margin-right: 25px;
 
+    &__avatar {
+      width: 110px;
+    }
+
+    &__close {
+      top: -5px;
+      right: -15px;
+
+      width: 36px;
+      height: 36px;
+
+      background-size: 18px 18px;
+
+      border-radius: 18px;
+    }
+
+    &__frame {
+      width: 110px;
+      height: 110px;
+
+      margin-bottom: 10px;
+    }
+
+    &__photo {
+      width: 79px;
+      height: 65px;
+    }
+
+    &__name {
+      font: {
+        size: 1.25em;
+      }
+    }
+    /*Кнопка участия в конкурсе*/
+    &__btn {
+      width: 385px;
+      height: 76px;
+
+      border-radius: 30px;
+      background-size: 385px 76px;
+
+      left: -390px;
+      top: 20px;
+    }
+
+    &__text {
+      font: {
+        size: 2em;
+      }
+    }
+    /*Фон для списка с количеством оставшихся элементов*/
+
+    &__remain {
+      margin-bottom: 10px;
+      font: {
+        size: 2.5em;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: $laptop) {
@@ -190,7 +259,16 @@
 
     margin-right: 0;
 
+    &--desktop {
+      display: flex;
+    }
+
+    &--mobile {
+      display: none;
+    }
+
     &--event {
+      display: flex;
       align-self: flex-start;
       margin-top: 55px;
       margin-left: 5px;
@@ -198,6 +276,7 @@
     }
 
     &--gallery {
+      display: flex;
       align-self: flex-start;
       margin-top: 55px;
       margin-left: 5px;

@@ -30,18 +30,24 @@
   }
 }
 
-@media only screen and (min-width: 414px) {
-
-}
-
 @media only screen and (min-width: $tablet) {
+  .personal {
+    padding-top: 15px;
 
+    &__enter {
+      width: 110px;
+      height: 110px;
+
+      margin-right: 10px;
+
+      background-size: 74px 74px;
+      background-position: left 26px center;
+    }
+  }
 }
 
 @media only screen and (min-width: $laptop) {
-
-}
-
-@media only screen and (min-width: $laptop-wide) {
-
+  .personal {
+    display: none;
+  }
 }

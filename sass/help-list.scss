@@ -22,3 +22,17 @@
     color: $text-panel;
   }
 }
+
+@media only screen and (min-width: $tablet) {
+  .help-list {
+    &__item {
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      font: {
+        size: 2em;
+      }
+    }
+  }
+}

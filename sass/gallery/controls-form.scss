@@ -1,33 +1,29 @@
 .controls-form {
-  width: 292px;
+  width: 34px;
+  height: 34px;
 
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
 
-  margin-right: 25px;
-
   &__input + label {
-    font: {
-      size: 1.875em;
-      family: $regular-font;
-      weight: 700;
-    }
+    font-size: 0;
 
-    color: $text-white;
     background-color: $btn-upload;
-    text-align: center;
-    vertical-align: middle;
+    background-image: url('../img/upload.png');
+    background-size: 24px 22px;
+    background-repeat: no-repeat;
+    background-position: center center;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    width: 292px;
-    height: 57px;
-    border-radius: 30px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
 
     cursor: pointer;
     outline: none;
@@ -35,5 +31,61 @@
     box-shadow:0px 0px 10px 0px rgba(0,0,0,0.25);
     -webkit-box-shadow:0px 0px 10px 0px rgba(0,0,0,0.25);
     -moz-box-shadow:0px 0px 10px 0px rgba(0,0,0,0.25);
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .controls-form {
+    width: 57px;
+    height: 57px;
+
+    &__input + label {
+      background-size: 41px 38px;
+
+      width: 57px;
+      height: 57px;
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .controls-form {
+    width: 292px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    margin-right: 25px;
+
+    &__input + label {
+      font: {
+        size: 1.875em;
+        family: $regular-font;
+        weight: 700;
+      }
+
+      color: $text-white;
+      background-color: $btn-upload;
+      text-align: center;
+      vertical-align: middle;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      width: 292px;
+      height: 57px;
+      border-radius: 30px;
+
+      cursor: pointer;
+      outline: none;
+
+      box-shadow:0px 0px 10px 0px rgba(0,0,0,0.25);
+      -webkit-box-shadow:0px 0px 10px 0px rgba(0,0,0,0.25);
+      -moz-box-shadow:0px 0px 10px 0px rgba(0,0,0,0.25);
+    }
   }
 }

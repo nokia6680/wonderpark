@@ -109,7 +109,7 @@
 				<div class="sidebar__personal personal">
 					<button class="personal__enter" type="button" style="display: none;"></button>
 					<!--Область личного кабинета-->
-					<div class="personal__cabinet main-cabinet">
+					<div class="personal__cabinet main-cabinet main-cabinet--mobile">
 						<!--Аватар юзера-->
 						<div class="main-cabinet__avatar">
 							<button class="main-cabinet__close" type="button"></button>
@@ -122,116 +122,116 @@
 						<!--Выдвигающийся список-->
 						<div class="main-cabinet__popup">
 							<b class="main-cabinet__remain">Осталось всего<span class="main-cabinet__count">&nbsp;4&nbsp;</span>символа!</b>
-							<ul class="main-cabinet__result cabinet-result">
-							<li class="cabinet-result__item cabinet-result__item--first">
-								<!--Base image for uncaught symbol-->
-								<picture class="cabinet-result__frame cabinet-result__frame--empty">
-									<source srcset="img/empty-1.webp" type="image/webp" />
-									<img class="cabinet-result__image" src="img/empty-1.png" alt="Неопознанная панда" />
-								</picture>
-								<!--Image for correctly taken symbol-->
-								<picture class="cabinet-result__frame cabinet-result__frame--full" id="symbol-1">
-									<source srcset="img/full-1.webp" type="image/webp" />
-									<img class="cabinet-result__image" src="img/full-1.png" alt="Опознанная панда" />
-								</picture>
-							</li>
-							<li class="cabinet-result__item cabinet-result__item--second">
-								<!--Base image for uncaught symbol-->
-								<picture class="cabinet-result__frame cabinet-result__frame--empty">
-									<source srcset="img/empty-2.webp" type="image/webp" />
-									<img class="cabinet-result__image" src="img/empty-2.png" alt="Неопознанная панда" />
-								</picture>
-								<!--Image for correctly taken symbol-->
-								<picture class="cabinet-result__frame cabinet-result__frame--full" id="symbol-1">
-									<source srcset="img/full-2.webp" type="image/webp" />
-									<img class="cabinet-result__image" src="img/full-2.png" alt="Опознанная панда" />
-								</picture>
-							</li>
-							<li class="cabinet-result__item cabinet-result__item--third">
-								<!--Base image for uncaught symbol-->
-								<picture class="cabinet-result__frame cabinet-result__frame--empty">
-									<source srcset="img/empty-3.webp" type="image/webp" />
-									<img class="cabinet-result__image" src="img/empty-3.png" alt="Неопознанная панда" />
-								</picture>
-								<!--Image for correctly taken symbol-->
-								<picture class="cabinet-result__frame cabinet-result__frame--full" id="symbol-1">
-									<source srcset="img/full-3.webp" type="image/webp" />
-									<img class="cabinet-result__image" src="img/full-3.png" alt="Опознанная панда" />
-								</picture>
-							</li>
-							<li class="cabinet-result__item cabinet-result__item--fourth">
-								<!--Base image for uncaught symbol-->
-								<picture class="cabinet-result__frame cabinet-result__frame--empty">
-									<source srcset="img/empty-4.webp" type="image/webp" />
-									<img class="cabinet-result__image" src="img/empty-4.png" alt="Неопознанная панда" />
-								</picture>
-								<!--Image for correctly taken symbol-->
-								<picture class="cabinet-result__frame cabinet-result__frame--full" id="symbol-1">
-									<source srcset="img/full-4.webp" type="image/webp" />
-									<img class="cabinet-result__image" src="img/full-4.png" alt="Опознанная панда" />
-								</picture>
-							</li>
-							<li class="cabinet-result__item cabinet-result__item--fifth">
-								<!--Base image for uncaught symbol-->
-								<picture class="cabinet-result__frame cabinet-result__frame--empty">
-									<source srcset="img/empty-5.webp" type="image/webp" />
-									<img class="cabinet-result__image" src="img/empty-5.png" alt="Неопознанная панда" />
-								</picture>
-								<!--Image for correctly taken symbol-->
-								<picture class="cabinet-result__frame cabinet-result__frame--full" id="symbol-1">
-									<source srcset="img/full-5.webp" type="image/webp" />
-									<img class="cabinet-result__image" src="img/full-5.png" alt="Опознанная панда" />
-								</picture>
-							</li>
-							<li class="cabinet-result__item cabinet-result__item--sixth">
-								<!--Base image for uncaught symbol-->
-								<picture class="cabinet-result__frame cabinet-result__frame--empty">
-									<source srcset="img/empty-6.webp" type="image/webp" />
-									<img class="cabinet-result__image" src="img/empty-6.png" alt="Неопознанная панда" />
-								</picture>
-								<!--Image for correctly taken symbol-->
-								<picture class="cabinet-result__frame cabinet-result__frame--full" id="symbol-1">
-									<source srcset="img/full-6.webp" type="image/webp" />
-									<img class="cabinet-result__image" src="img/full-6.png" alt="Опознанная панда" />
-								</picture>
-							</li>
-							<li class="cabinet-result__item cabinet-result__item--seventh">
-								<!--Base image for uncaught symbol-->
-								<picture class="cabinet-result__frame cabinet-result__frame--empty">
-									<source srcset="img/empty-1.webp" type="image/webp" />
-									<img class="cabinet-result__image" src="img/empty-1.png" alt="Неопознанная панда" />
-								</picture>
-								<!--Image for correctly taken symbol-->
-								<picture class="cabinet-result__frame cabinet-result__frame--full" id="symbol-1">
-									<source srcset="img/full-7.webp" type="image/webp" />
-									<img class="cabinet-result__image" src="img/full-7.png" alt="Опознанная панда" />
-								</picture>
-							</li>
-							<li class="cabinet-result__item cabinet-result__item--eight">
-								<!--Base image for uncaught symbol-->
-								<picture class="cabinet-result__frame cabinet-result__frame--empty">
-									<source srcset="img/empty-1.webp" type="image/webp" />
-									<img class="cabinet-result__image" src="img/empty-1.png" alt="Неопознанная панда" />
-								</picture>
-								<!--Image for correctly taken symbol-->
-								<picture class="cabinet-result__frame cabinet-result__frame--full" id="symbol-1">
-									<source srcset="img/full-1.webp" type="image/webp" />
-									<img class="cabinet-result__image" src="img/full-1.png" alt="Опознанная панда" />
-								</picture>
-							</li>
-							<li class="cabinet-result__item cabinet-result__item--nine">
-								<!--Base image for uncaught symbol-->
-								<picture class="cabinet-result__frame cabinet-result__frame--empty">
-									<source srcset="img/empty-1.webp" type="image/webp" />
-									<img class="cabinet-result__image" src="img/empty-1.png" alt="Неопознанная панда" />
-								</picture>
-								<!--Image for correctly taken symbol-->
-								<picture class="cabinet-result__frame cabinet-result__frame--full" id="symbol-1">
-									<source srcset="img/full-1.webp" type="image/webp" />
-									<img class="cabinet-result__image" src="img/full-1.png" alt="Опознанная панда" />
-								</picture>
-							</li>
-						</ul>
+							<ul class="main-cabinet__result cabinet-result cabinet-result--mobile">
+								<li class="cabinet-result__item cabinet-result__item--first">
+									<!--Base image for uncaught symbol-->
+									<picture class="cabinet-result__frame cabinet-result__frame--empty">
+										<source srcset="img/empty-1.webp" type="image/webp" />
+										<img class="cabinet-result__image" src="img/empty-1.png" alt="Неопознанная панда" />
+									</picture>
+									<!--Image for correctly taken symbol-->
+									<picture class="cabinet-result__frame cabinet-result__frame--full" id="symbol-1">
+										<source srcset="img/full-1.webp" type="image/webp" />
+										<img class="cabinet-result__image" src="img/full-1.png" alt="Опознанная панда" />
+									</picture>
+								</li>
+								<li class="cabinet-result__item cabinet-result__item--second">
+									<!--Base image for uncaught symbol-->
+									<picture class="cabinet-result__frame cabinet-result__frame--empty">
+										<source srcset="img/empty-2.webp" type="image/webp" />
+										<img class="cabinet-result__image" src="img/empty-2.png" alt="Неопознанная панда" />
+									</picture>
+									<!--Image for correctly taken symbol-->
+									<picture class="cabinet-result__frame cabinet-result__frame--full" id="symbol-1">
+										<source srcset="img/full-2.webp" type="image/webp" />
+										<img class="cabinet-result__image" src="img/full-2.png" alt="Опознанная панда" />
+									</picture>
+								</li>
+								<li class="cabinet-result__item cabinet-result__item--third">
+									<!--Base image for uncaught symbol-->
+									<picture class="cabinet-result__frame cabinet-result__frame--empty">
+										<source srcset="img/empty-3.webp" type="image/webp" />
+										<img class="cabinet-result__image" src="img/empty-3.png" alt="Неопознанная панда" />
+									</picture>
+									<!--Image for correctly taken symbol-->
+									<picture class="cabinet-result__frame cabinet-result__frame--full" id="symbol-1">
+										<source srcset="img/full-3.webp" type="image/webp" />
+										<img class="cabinet-result__image" src="img/full-3.png" alt="Опознанная панда" />
+									</picture>
+								</li>
+								<li class="cabinet-result__item cabinet-result__item--fourth">
+									<!--Base image for uncaught symbol-->
+									<picture class="cabinet-result__frame cabinet-result__frame--empty">
+										<source srcset="img/empty-4.webp" type="image/webp" />
+										<img class="cabinet-result__image" src="img/empty-4.png" alt="Неопознанная панда" />
+									</picture>
+									<!--Image for correctly taken symbol-->
+									<picture class="cabinet-result__frame cabinet-result__frame--full" id="symbol-1">
+										<source srcset="img/full-4.webp" type="image/webp" />
+										<img class="cabinet-result__image" src="img/full-4.png" alt="Опознанная панда" />
+									</picture>
+								</li>
+								<li class="cabinet-result__item cabinet-result__item--fifth">
+									<!--Base image for uncaught symbol-->
+									<picture class="cabinet-result__frame cabinet-result__frame--empty">
+										<source srcset="img/empty-5.webp" type="image/webp" />
+										<img class="cabinet-result__image" src="img/empty-5.png" alt="Неопознанная панда" />
+									</picture>
+									<!--Image for correctly taken symbol-->
+									<picture class="cabinet-result__frame cabinet-result__frame--full" id="symbol-1">
+										<source srcset="img/full-5.webp" type="image/webp" />
+										<img class="cabinet-result__image" src="img/full-5.png" alt="Опознанная панда" />
+									</picture>
+								</li>
+								<li class="cabinet-result__item cabinet-result__item--sixth">
+									<!--Base image for uncaught symbol-->
+									<picture class="cabinet-result__frame cabinet-result__frame--empty">
+										<source srcset="img/empty-6.webp" type="image/webp" />
+										<img class="cabinet-result__image" src="img/empty-6.png" alt="Неопознанная панда" />
+									</picture>
+									<!--Image for correctly taken symbol-->
+									<picture class="cabinet-result__frame cabinet-result__frame--full" id="symbol-1">
+										<source srcset="img/full-6.webp" type="image/webp" />
+										<img class="cabinet-result__image" src="img/full-6.png" alt="Опознанная панда" />
+									</picture>
+								</li>
+								<li class="cabinet-result__item cabinet-result__item--seventh">
+									<!--Base image for uncaught symbol-->
+									<picture class="cabinet-result__frame cabinet-result__frame--empty">
+										<source srcset="img/empty-1.webp" type="image/webp" />
+										<img class="cabinet-result__image" src="img/empty-1.png" alt="Неопознанная панда" />
+									</picture>
+									<!--Image for correctly taken symbol-->
+									<picture class="cabinet-result__frame cabinet-result__frame--full" id="symbol-1">
+										<source srcset="img/full-7.webp" type="image/webp" />
+										<img class="cabinet-result__image" src="img/full-7.png" alt="Опознанная панда" />
+									</picture>
+								</li>
+								<li class="cabinet-result__item cabinet-result__item--eight">
+									<!--Base image for uncaught symbol-->
+									<picture class="cabinet-result__frame cabinet-result__frame--empty">
+										<source srcset="img/empty-1.webp" type="image/webp" />
+										<img class="cabinet-result__image" src="img/empty-1.png" alt="Неопознанная панда" />
+									</picture>
+									<!--Image for correctly taken symbol-->
+									<picture class="cabinet-result__frame cabinet-result__frame--full" id="symbol-1">
+										<source srcset="img/full-1.webp" type="image/webp" />
+										<img class="cabinet-result__image" src="img/full-1.png" alt="Опознанная панда" />
+									</picture>
+								</li>
+								<li class="cabinet-result__item cabinet-result__item--nine">
+									<!--Base image for uncaught symbol-->
+									<picture class="cabinet-result__frame cabinet-result__frame--empty">
+										<source srcset="img/empty-1.webp" type="image/webp" />
+										<img class="cabinet-result__image" src="img/empty-1.png" alt="Неопознанная панда" />
+									</picture>
+									<!--Image for correctly taken symbol-->
+									<picture class="cabinet-result__frame cabinet-result__frame--full" id="symbol-1">
+										<source srcset="img/full-1.webp" type="image/webp" />
+										<img class="cabinet-result__image" src="img/full-1.png" alt="Опознанная панда" />
+									</picture>
+								</li>
+							</ul>
 						</div>
 						<!--Кнопка участия в конкурсе, когда собраны все 7 символов-->
 						<a class="main-cabinet__btn" href="event.html">
@@ -289,7 +289,7 @@
 						</button>
 					</div>
 					<!--Область личного кабинета ( включена только на десктопах )-->
-					<div class="main-header__cabinet main-cabinet" style="display: none;">
+					<div class="main-header__cabinet main-cabinet main-cabinet--desktop">
 						<!--Аватар юзера-->
 						<div class="main-cabinet__avatar">
 							<button class="main-cabinet__close" type="button"></button>

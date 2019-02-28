@@ -179,9 +179,8 @@
     justify-content: flex-start;
     align-items: center;
 
-    width: 51%;
+    width: 100%;
 
-    margin-left: 60px;
     z-index: 0;
   }
 
@@ -213,11 +212,48 @@
 }
 
 @media only screen and (min-width: 414px) {
+  .main-nav {
+    &__description {
+      display: block;
 
+      width: 350px;
+
+      font: {
+        size: 0.75em;
+        family: $regular-font;
+        weight: 700;
+      }
+
+      color: $text-white;
+      line-height: normal;
+      text-transform: uppercase;
+      text-align: center;
+
+      margin-top: 10px;
+      margin-bottom: 20px;
+
+      z-index: -4;
+    }
+  }
 }
 
 @media only screen and (min-width: $tablet) {
+  .main-nav {
+    &__description {
+      display: block;
 
+      width: 680px;
+
+      font: {
+        size: 1.25em;
+      }
+
+      margin-top: 10px;
+      margin-bottom: 20px;
+
+      z-index: -4;
+    }
+  }
 }
 
 @media only screen and (min-width: $laptop) {
@@ -420,7 +456,7 @@
     &__description {
       display: block;
 
-      max-width: 950px;
+      width: 950px;
 
       font: {
         size: 1.25em;

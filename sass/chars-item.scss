@@ -95,10 +95,6 @@
   }
 }
 
-@media only screen and (min-width: 414px) {
-
-}
-
 @media only screen and (min-width: $tablet) {
   .chars-item {
     display: flex !important;
@@ -108,7 +104,7 @@
 
     position: relative;
 
-    width: 438px;
+    width: 438px !important;
     height: 552px;
 
     padding-top: 20px;

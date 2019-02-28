@@ -90,12 +90,12 @@
 						</picture>
 					</a>
 					<!--Блок показа главного подарка, показывается всегда, кроме времени показа подсказки-->
-					<div class="main-logo__prize prize" style="display: none;">
+					<div class="main-logo__prize prize prize--event" style="display: none;">
 						<p class="prize__description">Хочешь попасть в крутой парк аттракционов Nickelodeon Land Madrid?</p>
 						<div class="prize__frame"></div>
 					</div>
 					<!--Блок перехода на страницу подсказки, показывается только в определенное время-->
-					<div class="main-logo__hint hint">
+					<div class="main-logo__hint hint hint--event">
 						<p class="hint__description">Пропустил&nbsp;символ? Жми&nbsp;сюда,&nbsp;ответь&nbsp;на&nbsp;вопрос и получи подсказку.</p>
 						<a class="hint__link" href="tip.html" target="_self">
 							<span class="visually-hidden">Перейти</span>
@@ -283,11 +283,11 @@
 						<!--Кнопка Вход/Регистрация, доступна только, если юзер закрыл попап Вход/Регистрация-->
 						<button class="main-nav__enter" type="button">Регистрация/Вход</button>
 					</div>
-					<p class="main-nav__description">Хочешь попасть в крутой парк аттракционов Nickelodeon Land Madrid? Участвуй в творческом конкурсе! Нарисуй аттракцион своей мечты и загрузи свою работу на сайт. Автор самого оригинального рисунка выиграет поездку для всей семьи в наш парк развлечений
+					<p class="main-nav__description main-nav__description--event">Хочешь попасть в крутой парк аттракционов Nickelodeon Land Madrid? Участвуй в творческом конкурсе! Нарисуй аттракцион своей мечты и загрузи свою работу на сайт. Автор самого оригинального рисунка выиграет поездку для всей семьи в наш парк развлечений
 						в Испании.</p>
 				</div>
 				<!--Блок Учетной записи-->
-				<div class="main__cabinet main-cabinet main-cabinet--event" style="display: none;">
+				<div class="main__cabinet main-cabinet main-cabinet--event">
 					<div class="main-cabinet__avatar">
 						<button class="main-cabinet__close" type="button"></button>
 						<picture class="main-cabinet__frame">
@@ -441,6 +441,10 @@
 		</main>
 		<!--Page footer-->
 		<footer class="footer">
+			<!--Блок как участвовать - только для мобильно-планшетных размеров-->
+			<div class="footer__help help-panel">
+				<button class="help-panel__btn" type="button">Как участвовать</button>
+			</div>
 			<div class="footer__wrapper">
 				<!--Copyrights-->
 				<div class="footer__copyright">
@@ -470,6 +474,35 @@
 				</ul>
 			</div>
 		</footer>
+	</div>
+	<!--Попап помощи для мобильной версии-->
+	<div class="popup-help" style="display: none;">
+		<div class="popup-help__wrapper">
+			<button class="popup-help__close closer" type="button"></button>
+			<ul class="popup-help__list help-list">
+				<li class="help-list__item">
+					<span class="help-list__text">1. Смотри Nickelodeon каждый день с 9:00 до 19:00 МСК</span>
+				</li>
+				<li class="help-list__item">
+					<span class="help-list__text">2. Лови появляющиеся символы</span>
+				</li>
+				<li class="help-list__item">
+					<span class="help-list__text">3. Выбери правильные на сайте</span>
+				</li>
+				<li class="help-list__item">
+					<span class="help-list__text">4. Выиграй билеты в кино</span>
+				</li>
+				<li class="help-list__item">
+					<span class="help-list__text">5. Набери 7 символов</span>
+				</li>
+				<li class="help-list__item">
+					<span class="help-list__text">6. Нарисуй аттракцион мечты</span>
+				</li>
+				<li class="help-list__item">
+					<span class="help-list__text">7. Выиграй путешествие в Nickelodeon Land Madrid</span>
+				</li>
+			</ul>
+		</div>
 	</div>
 	<!--Попап загрузки-->
 	<!--Удачная загрузка-->

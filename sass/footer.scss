@@ -47,12 +47,19 @@
   }
 }
 
-@media only screen and (min-width: 414px) {
-
-}
-
 @media only screen and (min-width: $tablet) {
+  .footer {
+    &__copyright {
+      flex-direction: row;
+      justify-content: space-between;
+    }
 
+    &__text {
+      font: {
+        size: 6px;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: $laptop) {
