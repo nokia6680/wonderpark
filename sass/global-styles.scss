@@ -54,6 +54,15 @@ body {
   background-image: url('../img/tip-bg.jpg');
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: cover;
+
+  @media only screen and (min-width: $laptop-wide) {
+    background-color: $bg-body;
+    background-image: url('../img/tip-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: auto;
+  }
 }
 
 .body-event {
@@ -61,6 +70,11 @@ body {
   background-image: url('../img/event-bg.jpg');
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: cover;
+
+  @media only screen and (min-width: $laptop-wide) {
+    background-size: auto;
+  }
 }
 
 .body-gallery {
