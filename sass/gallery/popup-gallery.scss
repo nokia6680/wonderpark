@@ -86,8 +86,9 @@
   }
 
   &__avatar {
-    width: 14px;
-    height: 12.5px;
+    width: auto;
+    min-height: 12.5px;
+    max-height: 12.5px;
   }
 
   &__name {
@@ -200,16 +201,11 @@
       border-top-left-radius: 50px;
       border-top-right-radius: 50px;
 
-      width: 100%;
-
       padding-top: 10px;
       padding-left: 10px;
       padding-bottom: 10px;
 
-      display: flex;
-      flex-direction: row;
       justify-content: flex-start;
-      align-items: center;
     }
 
     &__wrap {
@@ -220,8 +216,8 @@
     }
 
     &__avatar {
-      width: 64px;
-      height: 50px;
+      min-height: 50px;
+      max-height: 50px;
     }
 
     &__name {
@@ -242,11 +238,6 @@
       padding-right: 10px;
       padding-top: 23px;
       padding-bottom: 23px;
-
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
     }
 
     &__like {
@@ -266,15 +257,10 @@
     }
 
     &__search {
-      display: block;
-
       width: 40px;
       height: 40px;
 
       background-size: 40px 40px;
-
-      margin-left: auto;
-      margin-right: 20px;
     }
   }
 }
@@ -295,28 +281,14 @@
     &__header {
       border-top-left-radius: 30px;
       border-top-right-radius: 30px;
-
-      width: 100%;
-
-      padding-top: 10px;
-      padding-left: 10px;
-      padding-bottom: 10px;
-
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
     }
 
     &__wrap {
       width: 61px;
       height: 61px;
-
-      margin-right: 10px;
     }
 
     &__avatar {
-      width: auto;
       min-height: 36px;
       max-height: 36px;
     }
@@ -334,16 +306,6 @@
     &__footer {
       border-bottom-left-radius: 30px;
       border-bottom-right-radius: 30px;
-
-      padding-left: 10px;
-      padding-right: 10px;
-      padding-top: 23px;
-      padding-bottom: 23px;
-
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
     }
 
     &__like {
@@ -358,20 +320,13 @@
       font: {
         size: 1.25em;
       }
-
-      margin-right: 0;
     }
 
     &__search {
-      display: block;
-
       width: 34px;
       height: 34px;
 
       background-size: 34px 34px;
-
-      margin-left: auto;
-      margin-right: 20px;
     }
   }
 }
@@ -387,29 +342,16 @@
     &__header {
       border-top-left-radius: 50px;
       border-top-right-radius: 50px;
-
-      width: 100%;
-
-      padding-top: 10px;
-      padding-left: 10px;
-      padding-bottom: 10px;
-
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
     }
 
     &__wrap {
       width: 84px;
       height: 84px;
-
-      margin-right: 10px;
     }
 
     &__avatar {
-      width: 64px;
-      height: 50px;
+      min-height: 50px;
+      max-height: 50px;
     }
 
     &__name {
@@ -425,16 +367,6 @@
     &__footer {
       border-bottom-left-radius: 50px;
       border-bottom-right-radius: 50px;
-
-      padding-left: 10px;
-      padding-right: 10px;
-      padding-top: 23px;
-      padding-bottom: 23px;
-
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
     }
 
     &__like {
@@ -449,20 +381,13 @@
       font: {
         size: 1.875em;
       }
-
-      margin-right: 0;
     }
 
     &__search {
-      display: block;
-
       width: 40px;
       height: 40px;
 
       background-size: 40px 40px;
-
-      margin-left: auto;
-      margin-right: 20px;
     }
   }
 }

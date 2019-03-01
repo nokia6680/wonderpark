@@ -75,3 +75,12 @@
     }
   }
 }
+
+@media only screen and (min-width: $laptop-wide) {
+  .main {
+    /*Стилизация совмещенной части кнопок, УЗ и контента*/
+    &__middle {
+      width: 68.2%;
+    }
+  }
+}

@@ -28,8 +28,6 @@
 
 @media only screen and (min-width: $tablet) {
   .gallery-carousel {
-    width: 100%;
-
     position: relative;
 
     .prev-2 {
@@ -86,17 +84,6 @@
 
 @media only screen and (min-width: $laptop) {
   .gallery-carousel {
-    width: 100%;
-
-    &:not(.slick-initialized) {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
-
-      visibility: hidden;
-    }
-
     .next-2 {
       display: none;
     }

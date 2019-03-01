@@ -82,8 +82,9 @@
   }
 
   &__photo {
-    width: 39.5px;
-    height: 32.5px;
+    width: auto;
+    min-height: 32.5px;
+    max-height: 32.5px;
 
     position: absolute;
     top: 50%;
@@ -209,8 +210,8 @@
     }
 
     &__photo {
-      width: 79px;
-      height: 65px;
+      min-height: 65px;
+      max-height: 65px;
     }
 
     &__name {
@@ -250,13 +251,6 @@
   .main-cabinet {
     align-self: flex-end;
 
-    display: none;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-start;
-
-    position: relative;
-
     margin-right: 0;
 
     &--desktop {
@@ -286,120 +280,51 @@
 
     &__avatar {
       order: 2;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-
-      position: relative;
-
       min-width: 120px;
-
       margin-top: -30px;
-
       z-index: 4;
     }
 
     &__close {
-      position: absolute;
-
-      cursor: pointer;
-      outline: none;
-
       top: -5px;
       right: 15px;
 
       width: 25px;
       height: 25px;
 
-      background-color: $btn-closer;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 63.55'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23fff;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Eclose-cross%3C/title%3E%3Cg id='Слой_2' data-name='Слой 2'%3E%3Cg id='Слой_1-2' data-name='Слой 1'%3E%3Cpath class='cls-1' d='M28.94,31.79.61,60.11A2,2,0,0,0,.61,63,2,2,0,0,0,2,63.55,2,2,0,0,0,3.46,63L32,34.42,60.54,63a2,2,0,0,0,2.85,0,2,2,0,0,0,0-2.85L35.06,31.79,63.41,3.44A2,2,0,0,0,60.56.59L32,29.15,3.44.59A2,2,0,0,0,.59,3.44Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
       background-size: 14px 14px;
-      background-position: center center;
-      background-repeat: no-repeat;
-
-      border: none;
-      border-radius: 50%;
-      z-index: 2;
-
-      box-shadow: 0px 0px 5px 0px rgba(51,51,51,0.6);
-      -webkit-box-shadow: 0px 0px 5px 0px rgba(51,51,51,0.6);
-      -moz-box-shadow: 0px 0px 5px 0px rgba(51,51,51,0.6);
     }
 
     &__frame {
-      background-color: $bg-white;
-
       width: 80px;
       height: 80px;
 
-      border-radius: 50%;
-
       margin-bottom: 5px;
-
-      display: block;
-      position: relative;
-
-      cursor: pointer;
-      outline: none;
-
-      box-shadow:0px 1px 13px 0px rgba(4,4,4,0.3);
-      -webkit-box-shadow:0px 1px 13px 0px rgba(4,4,4,0.3);
-      -moz-box-shadow:0px 1px 13px 0px rgba(4,4,4,0.3);
     }
 
     &__photo {
       min-height: 47px;
       max-height: 47px;
-      width: auto;
-
-      position: absolute;
-      top: 50%;
-      left: 50%;
-
-      transform: translate(-50%, -50%);
     }
 
     &__name {
       font: {
         size: 1em;
-        family: $regular-font;
-        weight: 600;
       }
-
-      color: $text-white;
-      line-height: 1;
-      text-transform: uppercase;
     }
     /*Кнопка участия в конкурсе*/
     &__btn {
       width: 277px;
       height: 55px;
 
-      display: none;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      position: absolute;
-
       margin-top: -10px;
       margin-right: -40px;
 
       border-radius: 30px;
-      background-image: url('../img/contest-btn.png');
-      background-position: top center;
       background-size: 277px 55px;
-      text-decoration: none;
 
       cursor: pointer;
       outline: none;
-
-      box-shadow: 0px 0px 30px 0px rgba(247,194,29,0.2);
-      -webkit-box-shadow: 0px 0px 30px 0px rgba(247,194,29,0.2);
-      -moz-box-shadow: 0px 0px 30px 0px rgba(247,194,29,0.2);
-
-      z-index: 2;
 
       left: -267px;
       top: -10px;
@@ -416,169 +341,63 @@
     &__text {
       font: {
         size: 1.375em;
-        family: $regular-font;
-        weigth: 700;
       }
-
-      color: $text-white;
-      line-height: 1;
-      text-transform: uppercase;
     }
   }
 }
 
 @media only screen and (min-width: $laptop-wide) {
   .main-cabinet {
-    align-self: flex-end;
-
-    display: none;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-start;
-
-    position: relative;
-
-    margin-right: 0;
-
-    &--desktop {
-      display: none;
-    }
-
-    &--mobile {
-      display: none;
-    }
-
     &--event {
-      display: flex;
-      align-self: flex-start;
       margin-top: 55px;
       margin-left: 5px;
       width: 26.5%;
     }
 
     &--gallery {
-      display: flex;
-      align-self: flex-start;
       margin-top: 55px;
       margin-left: 5px;
       width: 26.5%;
     }
 
     &__avatar {
-      order: 2;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-
-      position: relative;
-
       width: 220px;
-
       margin-top: -30px;
-
-      z-index: 4;
     }
 
     &__close {
-      position: absolute;
-
-      cursor: pointer;
-      outline: none;
-
       top: -10px;
       right: 40px;
 
       width: 36px;
       height: 36px;
 
-      background-color: $btn-closer;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 63.55'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23fff;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Eclose-cross%3C/title%3E%3Cg id='Слой_2' data-name='Слой 2'%3E%3Cg id='Слой_1-2' data-name='Слой 1'%3E%3Cpath class='cls-1' d='M28.94,31.79.61,60.11A2,2,0,0,0,.61,63,2,2,0,0,0,2,63.55,2,2,0,0,0,3.46,63L32,34.42,60.54,63a2,2,0,0,0,2.85,0,2,2,0,0,0,0-2.85L35.06,31.79,63.41,3.44A2,2,0,0,0,60.56.59L32,29.15,3.44.59A2,2,0,0,0,.59,3.44Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
       background-size: 19px 19px;
-      background-position: center center;
-      background-repeat: no-repeat;
-
-      border: none;
-      border-radius: 50%;
-      z-index: 2;
-
-      box-shadow: 0px 0px 5px 0px rgba(51,51,51,0.6);
-      -webkit-box-shadow: 0px 0px 5px 0px rgba(51,51,51,0.6);
-      -moz-box-shadow: 0px 0px 5px 0px rgba(51,51,51,0.6);
     }
 
     &__frame {
-      background-color: $bg-white;
-
       width: 110px;
       height: 110px;
 
-      border-radius: 50%;
-
       margin-bottom: 10px;
-
-      display: block;
-      position: relative;
-
-      cursor: pointer;
-      outline: none;
-
-      box-shadow:0px 1px 13px 0px rgba(4,4,4,0.3);
-      -webkit-box-shadow:0px 1px 13px 0px rgba(4,4,4,0.3);
-      -moz-box-shadow:0px 1px 13px 0px rgba(4,4,4,0.3);
     }
 
     &__photo {
-      width: 79px;
-      height: 65px;
-
-      position: absolute;
-      top: 50%;
-      left: 50%;
-
-      transform: translate(-50%, -50%);
+      min-height: 65px;
+      max-height: 65px;
     }
 
     &__name {
       font: {
         size: 1.375em;
-        family: $regular-font;
-        weight: 600;
       }
-
-      color: $text-white;
-      line-height: 1;
-      text-transform: uppercase;
     }
     /*Кнопка участия в конкурсе*/
     &__btn {
       width: 385px;
       height: 76px;
 
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      position: absolute;
-
-      margin-top: -10px;
-      margin-right: -40px;
-
-      border-radius: 30px;
-      background-image: url('../img/contest-btn.png');
-      background-position: top center;
       background-size: 385px 76px;
-      text-decoration: none;
-
-      cursor: pointer;
-      outline: none;
-
-      box-shadow:0px 0px 30px 0px rgba(247,194,29,0.2);
-      -webkit-box-shadow:0px 0px 30px 0px rgba(247,194,29,0.2);
-      -moz-box-shadow:0px 0px 30px 0px rgba(247,194,29,0.2);
-
-      z-index: 2;
 
       left: -340px;
       top: 0;
@@ -595,13 +414,7 @@
     &__text {
       font: {
         size: 2em;
-        family: $regular-font;
-        weigth: 700;
       }
-
-      color: $text-white;
-      line-height: 1;
-      text-transform: uppercase;
     }
   }
 }
