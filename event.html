@@ -505,6 +505,181 @@
 			</ul>
 		</div>
 	</div>
+	<!--Регистрационные формы-->
+	<!--Форма выбора действия - вход или регистрация-->
+	<div class="popup-enter" style="display: none;">
+		<div class="popup-enter__wrapper">
+			<button class="popup-enter__close closer" type="button"></button>
+			<button class="popup-enter__btn popup-enter__btn--register" type="button">Регистрация</button>
+			<button class="popup-enter__btn popup-enter__btn--enter" type="button">Вход</button>
+			<a class="popup-enter__recovery" href="#">Забыли пароль?</a>
+		</div>
+	</div>
+	<!--Форма регистрации-->
+	<div class="popup-register" style="display: none;">
+		<div class="popup-register__wrapper">
+			<button class="popup-register__close closer" type="button"></button>
+			<h2 class="popup-register__title">Регистрация</h2>
+			<b class="popup-register__subtitle">Заполни форму ниже и отправь нам</b>
+			<form class="popup-register__form reg-form" method="post" action="#">
+				<ul class="reg-form__list reg-list">
+					<li class="reg-list__item">
+						<label class="reg-list__label" for="name">Твоё имя:</label>
+						<input class="reg-list__input" type="text" name="name" id="name" />
+						<span class="reg-list__error reg-list__error--name">Ты забыл написать своё имя!</span>
+					</li>
+					<li class="reg-list__item">
+						<label class="reg-list__label" for="tel">Номер телефона:</label>
+						<input class="reg-list__input" type="tel" name="tel" id="tel" />
+						<span class="reg-list__error reg-list__error--tel">Ты забыл написать номер телефона!</span>
+					</li>
+					<li class="reg-list__item reg-list__item--agreement">
+						<input class="reg-list__checkbox reg-list__checkbox--agreement visually-hidden" type="checkbox" name="agree" id="agree" required checked />
+						<label class="reg-list__label reg-list__label--checkbox reg-list__label--agreement" for="agree">Согласен на получение смс-рассылки и обработку персональных данных</label>
+						<span class="reg-list__error reg-list__error--required">Это поле должно быть заполнено!</span>
+					</li>
+					<li class="reg-list__item reg-list__item--policy">
+						<input class="reg-list__checkbox reg-list__checkbox--policy visually-hidden" type="checkbox" name="policy" id="policy" required checked />
+						<label class="reg-list__label reg-list__label--checkbox reg-list__label--policy" for="policy">Согласен с правилами проведения конкурсов</label>
+						<span class="reg-list__error reg-list__error--required">Это поле должно быть заполнено!</span>
+					</li>
+				</ul>
+				<h3 class="reg-form__title">Выбери аватар</h3>
+				<ul class="reg-form__avatar reg-avatar">
+					<li class="reg-avatar__item reg-avatar__item--dog">
+						<input class="reg-avatar__radio reg-avatar__radio--dog visually-hidden" type="radio" name="avatar" value="avatar-1" id="avatar-1" />
+						<label class="reg-avatar__label reg-avatar__label--dog" for="avatar-1"><span class="visually-hidden">Собака</span></label>
+					</li>
+					<li class="reg-avatar__item reg-avatar__item--hedgehog">
+						<input class="reg-avatar__radio reg-avatar__radio--hedgehog visually-hidden" type="radio" name="avatar" value="avatar-2" id="avatar-2" />
+						<label class="reg-avatar__label reg-avatar__label--hedgehog" for="avatar-2"><span class="visually-hidden">Ёж</span></label>
+					</li>
+					<li class="reg-avatar__item reg-avatar__item--monkey">
+						<input class="reg-avatar__radio reg-avatar__radio--monkey visually-hidden" type="radio" name="avatar" value="avatar-3" id="avatar-3" />
+						<label class="reg-avatar__label reg-avatar__label--monkey" for="avatar-3"><span class="visually-hidden">Обезьяна</span></label>
+					</li>
+					<li class="reg-avatar__item reg-avatar__item--boar">
+						<input class="reg-avatar__radio reg-avatar__radio--boar visually-hidden" type="radio" name="avatar" value="avatar-4" id="avatar-4" />
+						<label class="reg-avatar__label reg-avatar__label--boar" for="avatar-4"><span class="visually-hidden">Кабан</span></label>
+					</li>
+					<li class="reg-avatar__item reg-avatar__item--bear">
+						<input class="reg-avatar__radio reg-avatar__radio--bear visually-hidden" type="radio" name="avatar" value="avatar-5" id="avatar-5" />
+						<label class="reg-avatar__label reg-avatar__label--bear" for="avatar-5"><span class="visually-hidden">Медведь</span></label>
+					</li>
+				</ul>
+				<button class="reg-form__submit" type="submit">Отправить</button>
+			</form>
+		</div>
+	</div>
+	<!--Форма входа в свою УЗ-->
+	<div class="popup-login" style="display: none;">
+		<div class="popup-login__wrapper">
+			<button class="popup-login__close closer" type="button"></button>
+			<form class="popup-login__form log-form">
+				<ul class="log-form__list log-list">
+					<li class="log-list__item">
+						<label class="log-list__label" for="phone">Номер телефона:</label>
+						<input class="log-list__input" type="tel" name="phone" id="phone" />
+						<span class="log-list__error log-list__error--phone">Такой номер не зарегистрирован!</span>
+					</li>
+					<li class="log-list__item">
+						<label class="log-list__label" for="password">Пароль:</label>
+						<input class="log-list__input" type="password" name="password" id="password" />
+						<span class="log-list__error log-list__error--password">Пароль введён неверно!</span>
+					</li>
+				</ul>
+				<a class="log-form__recovery" href="#" target="_self">Забыли пароль?</a>
+				<button class="log-form__submit" type="submit">Вход</button>
+			</form>
+			<div class="popup-login__bottom">
+				<a class="popup-login__register" href="#" target="_self">Ещё не зарегистрированы?</a>
+			</div>
+		</div>
+	</div>
+	<!--Форма восстановления пароля-->
+	<div class="popup-recover" style="display: none;">
+		<div class="popup-recover__wrapper">
+			<button class="popup-recover__close closer" type="button"></button>
+			<h2 class="popup-recover__title">Забыли пароль?</h2>
+			<b class="popup-recover__subtitle">Оставьте свой номер телефона, пароль придет в виде СМС</b>
+			<form class="popup-recover__form recover-form" method="post" action="#">
+				<label class="recover-form__label" for="recover-phone">Номер телефона:</label>
+				<input class="recover-form__input" type="tel" name="recover-phone" id="recover-phone" />
+				<span class="recover-form__error">Данный номер телефона не зарегистрирован!</span>
+				<button class="recover-form__submit" type="submit">Отправить</button>
+			</form>
+		</div>
+	</div>
+		<!--Попап правильного ответа пользователя-->
+	<div class="popup-answer" style="display: none;">
+		<div class="popup-answer__wrapper">
+			<button class="popup-answer__close closer" type="button"></button>
+			<h2 class="popup-answer__title">Правильный ответ!</h2>
+			<!--Активно только если пользователь изначально не зарегистрирован-->
+			<button class="popup-answer__link" type="button">Регистрация</button>
+		</div>
+	</div>
+		<!--Попап неверного ответа пользователя-->
+	<div class="popup-mistake" style="display: none;">
+		<div class="popup-mistake__wrapper">
+			<button class="popup-mistake__close closer" type="button"></button>
+			<h2 class="popup-mistake__title">Неправильно!</h2>
+			<!--Подзаголовок для случая, если пользователь еще имеет попытки для ответа-->
+			<b class="popup-mistake__subtitle popup-mistake__subtitle--try">Попробуй ещё раз, осталось<span class="popup-mistake__counter">&nbsp;2&nbsp;</span>попытки</b>
+			<!--Подзаголовок для случая, кодга попытки закончились-->
+			<b class="popup-mistake__subtitle popup-mistake__subtitle--over">Ты не угадал, но приходи вечером</b>
+			<!--Кнопка активна только если еще есть попытки ответа-->
+			<button class="popup-mistake__link" type="button">Попробовать ещё</button>
+		</div>
+	</div>
+	<!--Всплывающие попапы персноажей и видео-->
+	<!--Попап с видео-->
+	<div class="popup-video" style="display: none;">
+		<div class="popup-video__wrapper">
+			<button class="popup-video__close closer" type="button"></button>
+			<iframe class="popup-video__player" src="https://www.youtube.com/embed/tl-M6AYS-tI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</div>
+	<!--Попап со слайдером персонажей-->
+	<div class="popup-chars" style="display: none;">
+		<div class="popup-chars__wrapper">
+			<button class="popup-chars__close closer" type="button"></button>
+			<div class="popup-chars__slider chars-slider">
+				<!---->
+				<div class="chars-slider__item chars-item">
+					<h3 class="chars-item__title">Джун</h3>
+					<picture class="chars-item__frame">
+						<source srcset="img/char-1.webp" type="image/webp" />
+						<img class="chars-item__img" src="img/char-1.png" alt="Джун" />
+					</picture>
+					<p class="chars-item__description">12-летняя Джун - фантазёрка и мечтательница с богатым воображением. Вместе со своей изобретательной мамой она создала собственный фантазийный, самый-самый лучший парк развлечений - Волшебный парк Джун. У Джун есть талант созидания, её сильные стороны
+						- математика, инженерия и строительство. После того как её мама заболевает и отправляется на лечение, героиня теряет уверенность в своих силах и интерес к парку.</p>
+				</div>
+				<!---->
+				<div class="chars-slider__item chars-item">
+					<h3 class="chars-item__title">Джун</h3>
+					<picture class="chars-item__frame">
+						<source srcset="img/char-1.webp" type="image/webp" />
+						<img class="chars-item__img" src="img/char-1.png" alt="Джун" />
+					</picture>
+					<p class="chars-item__description">12-летняя Джун - фантазёрка и мечтательница с богатым воображением. Вместе со своей изобретательной мамой она создала собственный фантазийный, самый-самый лучший парк развлечений - Волшебный парк Джун. У Джун есть талант созидания, её сильные стороны
+						- математика, инженерия и строительство. После того как её мама заболевает и отправляется на лечение, героиня теряет уверенность в своих силах и интерес к парку.</p>
+				</div>
+				<!---->
+				<div class="chars-slider__item chars-item">
+					<h3 class="chars-item__title">Джун</h3>
+					<picture class="chars-item__frame">
+						<source srcset="img/char-1.webp" type="image/webp" />
+						<img class="chars-item__img" src="img/char-1.png" alt="Джун" />
+					</picture>
+					<p class="chars-item__description">12-летняя Джун - фантазёрка и мечтательница с богатым воображением. Вместе со своей изобретательной мамой она создала собственный фантазийный, самый-самый лучший парк развлечений - Волшебный парк Джун. У Джун есть талант созидания, её сильные стороны
+						- математика, инженерия и строительство. После того как её мама заболевает и отправляется на лечение, героиня теряет уверенность в своих силах и интерес к парку.</p>
+				</div>
+			</div>
+			<div class="prev-1"></div>
+			<div class="next-1"></div>
+		</div>
+	</div>
 	<!--Попап загрузки-->
 	<!--Удачная загрузка-->
 	<div class="success-upload" style="display: none;">
