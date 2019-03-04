@@ -1,0 +1,119 @@
+.player-slider {
+  position: relative;
+  width: 100%;
+
+  &:not(.slick-initialized) {
+    visibility: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  /*Кнопки*/
+  .prev-4 {
+    display: block;
+    position: absolute;
+
+    width: 32px;
+    height: 32px;
+
+    border: none;
+
+    z-index: 10;
+
+    top: 45%;
+    left: -40px;
+
+    background-image: url('../img/arrow-left.png');
+    background-size: 19px 32px;
+    background-repeat: no-repeat;
+    background-position: right center;
+
+    transition: 0.2s ease-in;
+
+    cursor: pointer;
+    outline: none;
+  }
+
+  .next-4 {
+    display: block;
+    position: absolute;
+
+    width: 32px;
+    height: 32px;
+
+    border: none;
+
+    z-index: 10;
+
+    top: 45%;
+    right: -40px;
+
+    background-image: url('../img/arrow-right.png');
+    background-size: 19px 32px;
+    background-repeat: no-repeat;
+    background-position: left center;
+
+    transition: 0.2s ease-in;
+
+    cursor: pointer;
+    outline: none;
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  .player-slider {
+
+    /*Кнопки*/
+    .prev-4 {
+      width: 32px;
+      height: 32px;
+
+      top: 45%;
+      left: -40px;
+
+      background-size: 19px 32px;
+    }
+
+    .next-4 {
+      width: 32px;
+      height: 32px;
+
+      z-index: 10;
+
+      top: 45%;
+      right: -40px;
+
+      background-size: 19px 32px;
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .player-slider {
+
+    /*Кнопки*/
+    .prev-4 {
+      width: 64px;
+      height: 64px;
+
+      top: 45%;
+      left: -100px;
+
+      background-size: 38px 64px;
+    }
+
+    .next-4 {
+      width: 64px;
+      height: 64px;
+
+      z-index: 10;
+
+      top: 45%;
+      right: -100px;
+
+      background-size: 38px 64px;
+    }
+  }
+}

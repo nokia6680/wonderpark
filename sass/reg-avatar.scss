@@ -11,21 +11,23 @@
   align-items: flex-start;
   flex-wrap: wrap;
 
+  padding-bottom: 10px;
+
   &__item {
-    width: 74px;
-    height: 74px;
+    width: 60px;
+    height: 60px;
 
     position: relative;
 
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 
     &--hedgehog {
-      margin-left: 10px;
-      margin-right: 10px;
+      margin-left: 20px;
+      margin-right: 20px;
     }
 
     &--boar {
-      margin-right: 10px;
+      margin-right: 20px;
     }
   }
 
@@ -79,7 +81,7 @@
   }
 }
 
-@media only screen and (min-width: $tablet) {
+@media only screen and (min-width: $laptop-wide) {
   .reg-avatar {
     width: 100%;
 

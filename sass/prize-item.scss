@@ -1,0 +1,45 @@
+.prize-item {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 183px;
+  width: 100%;
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  .prize-item {
+    height: 253px;
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .prize-item {
+    height: 376px;
+  }
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .prize-item {
+    height: 253px;
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .prize-item {
+    height: 253px;
+  }
+}
+
+@media only screen and (min-width: $laptop-wide) {
+  .prize-item {
+    height: 376px;
+  }
+}

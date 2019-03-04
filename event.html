@@ -416,7 +416,7 @@
 					<button class="top-panel__close" type="button"></button>
 					<ul class="top-panel__list panel-list">
 						<li class="panel-list__item">
-							<span class="panel-list__text">1. Смотри Nickelodeon каждый день с 9:00 до 19:00 МСК</span>
+							<span class="panel-list__text">1. Смотри Nickelodeon каждый день с 19:00 до 21:00 МСК</span>
 						</li>
 						<li class="panel-list__item">
 							<span class="panel-list__text">2. Лови появляющиеся символы</span>
@@ -482,7 +482,7 @@
 			<button class="popup-help__close closer" type="button"></button>
 			<ul class="popup-help__list help-list">
 				<li class="help-list__item">
-					<span class="help-list__text">1. Смотри Nickelodeon каждый день с 9:00 до 19:00 МСК</span>
+					<span class="help-list__text">1. Смотри Nickelodeon каждый день с 19:00 до 21:00 МСК</span>
 				</li>
 				<li class="help-list__item">
 					<span class="help-list__text">2. Лови появляющиеся символы</span>
@@ -512,7 +512,7 @@
 			<button class="popup-enter__close closer" type="button"></button>
 			<button class="popup-enter__btn popup-enter__btn--register" type="button">Регистрация</button>
 			<button class="popup-enter__btn popup-enter__btn--enter" type="button">Вход</button>
-			<a class="popup-enter__recovery" href="#">Забыли пароль?</a>
+			<a class="popup-enter__recovery" href="#">Забыл пароль?</a>
 		</div>
 	</div>
 	<!--Форма регистрации-->
@@ -535,12 +535,12 @@
 					</li>
 					<li class="reg-list__item reg-list__item--agreement">
 						<input class="reg-list__checkbox reg-list__checkbox--agreement visually-hidden" type="checkbox" name="agree" id="agree" required checked />
-						<label class="reg-list__label reg-list__label--checkbox reg-list__label--agreement" for="agree">Согласен на получение смс-рассылки и обработку персональных данных</label>
+						<label class="reg-list__label reg-list__label--checkbox reg-list__label--agreement" for="agree">Согласен на получение смс-рассылки и <a class="reg-list__label--link" href="#" target="_blank">обработку персональных данных</a></label>
 						<span class="reg-list__error reg-list__error--required">Это поле должно быть заполнено!</span>
 					</li>
 					<li class="reg-list__item reg-list__item--policy">
 						<input class="reg-list__checkbox reg-list__checkbox--policy visually-hidden" type="checkbox" name="policy" id="policy" required checked />
-						<label class="reg-list__label reg-list__label--checkbox reg-list__label--policy" for="policy">Согласен с правилами проведения конкурсов</label>
+						<label class="reg-list__label reg-list__label--checkbox reg-list__label--policy" for="policy">Согласен с <a class="reg-list__label--link" href="#" target="_blank">правилами проведения конкурсов</a></label>
 						<span class="reg-list__error reg-list__error--required">Это поле должно быть заполнено!</span>
 					</li>
 				</ul>
@@ -588,11 +588,11 @@
 						<span class="log-list__error log-list__error--password">Пароль введён неверно!</span>
 					</li>
 				</ul>
-				<a class="log-form__recovery" href="#" target="_self">Забыли пароль?</a>
+				<a class="log-form__recovery" href="#" target="_self">Забыл пароль?</a>
 				<button class="log-form__submit" type="submit">Вход</button>
 			</form>
 			<div class="popup-login__bottom">
-				<a class="popup-login__register" href="#" target="_self">Ещё не зарегистрированы?</a>
+				<a class="popup-login__register" href="#" target="_self">Ещё не зарегистрирован?</a>
 			</div>
 		</div>
 	</div>
@@ -600,8 +600,8 @@
 	<div class="popup-recover" style="display: none;">
 		<div class="popup-recover__wrapper">
 			<button class="popup-recover__close closer" type="button"></button>
-			<h2 class="popup-recover__title">Забыли пароль?</h2>
-			<b class="popup-recover__subtitle">Оставьте свой номер телефона, пароль придет в виде СМС</b>
+			<h2 class="popup-recover__title">Забыл пароль?</h2>
+			<b class="popup-recover__subtitle">Оставь свой номер телефона, пароль придет в виде СМС</b>
 			<form class="popup-recover__form recover-form" method="post" action="#">
 				<label class="recover-form__label" for="recover-phone">Номер телефона:</label>
 				<input class="recover-form__input" type="tel" name="recover-phone" id="recover-phone" />

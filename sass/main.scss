@@ -41,6 +41,15 @@
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .main {
+    &__middle {
+      &--splash {
+        align-items: center;
+      }
+    }
+  }
+}
 @media only screen and (min-width: $laptop) {
   .main {
     width: 100%;
@@ -49,9 +58,20 @@
     justify-content: center;
     align-items: flex-start;
 
+    /*Splash item*/
+
+    &--splash {
+      align-items: center;
+      justify-content: flex-start;
+    }
+
     /*Стилизация совмещенной части кнопок, УЗ и контента*/
     &__middle {
       width: 71.2%;
+
+      &--splash {
+        align-items: flex-start;
+      }
     }
 
     &--event {

@@ -131,11 +131,38 @@ if (modalEventSearch) {
   });
 }
 
+/*Мобильное меню*/
+var menuMobile = document.querySelector(".header-nav");
+var headerMobile = document.querySelector(".header");
+var openButton = document.querySelectorAll(".header__opener");
+
+if (menuMobile) {
+  for (var i = 0; i < openButton.length; i++) openButton[i].addEventListener("click", function(event) {
+    event.preventDefault();
+    menuMobile.classList.add("header-nav--active");
+  });
+
+  menuMobile.addEventListener("click", function() {
+    menuMobile.classList.remove("header-nav--active");
+  });
+
+  menuMobile.addEventListener("click", function(event) {
+    event.stopPropagation();
+  });
+
+  window.addEventListener("keydown", function(event) {
+    if (event.keyCode === 27) {
+      menuMobile.classList.remove("header-nav--active");
+    }
+  });
+}
+
 
 /*Слайдер в попапе персонажей*/
 $(document).ready(function() {
   $('.chars-slider').slick({
     infinite: true,
+    initialSlide: 1,
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: false,
@@ -143,6 +170,36 @@ $(document).ready(function() {
     arrows: true,
     prevArrow: '<div class="prev-1"></div>',
     nextArrow: '<div class="next-1"></div>'
+  });
+});
+
+/*Слайдер в попапе призов*/
+$(document).ready(function() {
+  $('.prize-slider').slick({
+    infinite: true,
+    initialSlide: 1,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    fade: true,
+    arrows: true,
+    prevArrow: '<div class="prev-3"></div>',
+    nextArrow: '<div class="next-3"></div>'
+  });
+});
+
+/*Слайдер в попапе призов*/
+$(document).ready(function() {
+  $('.player-slider').slick({
+    infinite: true,
+    initialSlide: 1,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    fade: true,
+    arrows: true,
+    prevArrow: '<div class="prev-4"></div>',
+    nextArrow: '<div class="next-4"></div>'
   });
 });
 

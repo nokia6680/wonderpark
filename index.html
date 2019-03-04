@@ -393,7 +393,7 @@
 					</div>
 				</div>
 				<!--Секция основного контента для выбора правильного контента-->
-				<section class="main__content main-content">
+				<section class="main__content main-content main-content--index">
 					<h1 class="main-content__title">Смотри Nickelodeon сегодня в <span class="main-content__time">XX:XX</span> и <span class="main-content__time">XX:XX</span>, чтобы узнать верный символ</h1>
 					<div class="main-content__wrapper content-wrapper">
 						<div class="content-wrapper__item content-wrapper__item--first">
@@ -514,7 +514,7 @@
 						<button class="top-panel__close" type="button"></button>
 						<ul class="top-panel__list panel-list">
 							<li class="panel-list__item">
-								<span class="panel-list__text">1. Смотри Nickelodeon каждый день с 9:00 до 19:00 МСК</span>
+								<span class="panel-list__text">1. Смотри Nickelodeon каждый день с 19:00 до 21:00 МСК</span>
 							</li>
 							<li class="panel-list__item">
 								<span class="panel-list__text">2. Лови появляющиеся символы</span>
@@ -581,7 +581,7 @@
 			<button class="popup-help__close closer" type="button"></button>
 			<ul class="popup-help__list help-list">
 				<li class="help-list__item">
-					<span class="help-list__text">1. Смотри Nickelodeon каждый день с 9:00 до 19:00 МСК</span>
+					<span class="help-list__text">1. Смотри Nickelodeon каждый день с 19:00 до 21:00 МСК</span>
 				</li>
 				<li class="help-list__item">
 					<span class="help-list__text">2. Лови появляющиеся символы</span>
@@ -611,7 +611,7 @@
 			<button class="popup-enter__close closer" type="button"></button>
 			<button class="popup-enter__btn popup-enter__btn--register" type="button">Регистрация</button>
 			<button class="popup-enter__btn popup-enter__btn--enter" type="button">Вход</button>
-			<a class="popup-enter__recovery" href="#">Забыли пароль?</a>
+			<a class="popup-enter__recovery" href="#">Забыл пароль?</a>
 		</div>
 	</div>
 	<!--Форма регистрации-->
@@ -632,14 +632,19 @@
 						<input class="reg-list__input" type="tel" name="tel" id="tel" />
 						<span class="reg-list__error reg-list__error--tel">Ты забыл написать номер телефона!</span>
 					</li>
+					<li class="reg-list__item">
+						<label class="reg-list__label" for="pass">Введи пароль:</label>
+						<input class="reg-list__input" type="password" name="pass" id="pass" />
+						<span class="reg-list__error reg-list__error--pass">Ты забыл написать номер телефона!</span>
+					</li>
 					<li class="reg-list__item reg-list__item--agreement">
 						<input class="reg-list__checkbox reg-list__checkbox--agreement visually-hidden" type="checkbox" name="agree" id="agree" required checked />
-						<label class="reg-list__label reg-list__label--checkbox reg-list__label--agreement" for="agree">Согласен на получение смс-рассылки и обработку персональных данных</label>
+						<label class="reg-list__label reg-list__label--checkbox reg-list__label--agreement" for="agree">Согласен на получение смс-рассылки и <a class="reg-list__label--link" href="#" target="_blank">обработку персональных данных</a></label>
 						<span class="reg-list__error reg-list__error--required">Это поле должно быть заполнено!</span>
 					</li>
 					<li class="reg-list__item reg-list__item--policy">
 						<input class="reg-list__checkbox reg-list__checkbox--policy visually-hidden" type="checkbox" name="policy" id="policy" required checked />
-						<label class="reg-list__label reg-list__label--checkbox reg-list__label--policy" for="policy">Согласен с правилами проведения конкурсов</label>
+						<label class="reg-list__label reg-list__label--checkbox reg-list__label--policy" for="policy">Согласен с <a class="reg-list__label--link" href="#" target="_blank">правилами проведения конкурсов</a></label>
 						<span class="reg-list__error reg-list__error--required">Это поле должно быть заполнено!</span>
 					</li>
 				</ul>
@@ -691,7 +696,7 @@
 				<button class="log-form__submit" type="submit">Вход</button>
 			</form>
 			<div class="popup-login__bottom">
-				<a class="popup-login__register" href="#" target="_self">Ещё не зарегистрированы?</a>
+				<a class="popup-login__register" href="#" target="_self">Ещё не зарегистрирован?</a>
 			</div>
 		</div>
 	</div>
@@ -699,8 +704,8 @@
 	<div class="popup-recover" style="display: none;">
 		<div class="popup-recover__wrapper">
 			<button class="popup-recover__close closer" type="button"></button>
-			<h2 class="popup-recover__title">Забыли пароль?</h2>
-			<b class="popup-recover__subtitle">Оставьте свой номер телефона, пароль придет в виде СМС</b>
+			<h2 class="popup-recover__title">Забыл пароль?</h2>
+			<b class="popup-recover__subtitle">Оставь свой номер телефона, пароль придет в виде СМС</b>
 			<form class="popup-recover__form recover-form" method="post" action="#">
 				<label class="recover-form__label" for="recover-phone">Номер телефона:</label>
 				<input class="recover-form__input" type="tel" name="recover-phone" id="recover-phone" />
@@ -777,6 +782,110 @@
 			</div>
 			<div class="prev-1"></div>
 			<div class="next-1"></div>
+		</div>
+	</div>
+	<!--Попап слайдера с призами-->
+	<div class="popup-prize" style="display: none;">
+		<div class="popup-prize__wrapper">
+			<button class="popup-prize__close closer" type="button"></button>
+			<h2 class="popup-prize__title">Призы</h2>
+			<!--Сам слайдер-->
+			<div class="popup-prize__slider prize-slider">
+				<!---->
+				<div class="prize-slider__item prize-item">
+					<picture class="prize-item__frame">
+						<source srcset="img/prize-1.webp" type="image/webp" />
+						<img class="prize-item__img" src="img/prize-1.jpg" alt="Madrid Park" />
+					</picture>
+				</div>
+				<!---->
+				<div class="prize-slider__item prize-item">
+					<picture class="prize-item__frame">
+						<source srcset="img/prize-2.webp" type="image/webp" />
+						<img class="prize-item__img" src="img/prize-2.jpg" alt="Madrid Park" />
+					</picture>
+				</div>
+				<!---->
+				<div class="prize-slider__item prize-item">
+					<picture class="prize-item__frame">
+						<source srcset="img/prize-3.webp" type="image/webp" />
+						<img class="prize-item__img" src="img/prize-3.jpg" alt="Madrid Park" />
+					</picture>
+				</div>
+				<!---->
+				<div class="prize-slider__item prize-item">
+					<picture class="prize-item__frame">
+						<source srcset="img/prize-4.webp" type="image/webp" />
+						<img class="prize-item__img" src="img/prize-4.jpg" alt="Madrid Park" />
+					</picture>
+				</div>
+				<!---->
+				<div class="prize-slider__item prize-item">
+					<picture class="prize-item__frame">
+						<source srcset="img/prize-5.webp" type="image/webp" />
+						<img class="prize-item__img" src="img/prize-5.jpg" alt="Madrid Park" />
+					</picture>
+				</div>
+				<!---->
+				<div class="prize-slider__item prize-item">
+					<picture class="prize-item__frame">
+						<source srcset="img/prize-6.webp" type="image/webp" />
+						<img class="prize-item__img" src="img/prize-6.jpg" alt="Madrid Park" />
+					</picture>
+				</div>
+				<!---->
+				<div class="prize-slider__item prize-item">
+					<picture class="prize-item__frame">
+						<source srcset="img/prize-7.webp" type="image/webp" />
+						<img class="prize-item__img" src="img/prize-7.jpg" alt="Madrid Park" />
+					</picture>
+				</div>
+			</div>
+			<p class="popup-prize__description">Главный приз - путешествие в парк аттракционов Nickelodeon Land Madrid для всей семьи! А ещё каждый день ты можешь выиграть билеты в кино.</p>
+			<!--Стрелки-->
+			<div class="prev-3"></div>
+			<div class="next-3"></div>
+		</div>
+	</div>
+	<!--Попап со слайдеров видео-->
+	<div class="popup-player" style="display: none;">
+		<div class="popup-player__wrapper">
+			<button class="popup-player__close closer" type="button"></button>
+			<div class="popup-player__slider player-slider">
+				<!--Slide-->
+				<div class="player-slider__item player-item">
+					<div class="player-item__wrap">
+						<iframe class="player-item__video" src="https://player.vimeo.com/video/320715104" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</div>
+				</div>
+				<!--Slide-->
+				<div class="player-slider__item player-item">
+					<div class="player-item__wrap">
+						<iframe class="player-item__video" src="https://player.vimeo.com/video/320715079" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</div>
+				</div>
+				<!--Slide-->
+				<div class="player-slider__item player-item">
+					<div class="player-item__wrap">
+						<iframe class="player-item__video" src="https://player.vimeo.com/video/320715043" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</div>
+				</div>
+				<!--Slide-->
+				<div class="player-slider__item player-item">
+					<div class="player-item__wrap">
+						<iframe class="player-item__video" src="https://player.vimeo.com/video/320715008" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</div>
+				</div>
+				<!--Slide-->
+				<div class="player-slider__item player-item">
+					<div class="player-item__wrap">
+						<iframe class="player-item__video" src="https://player.vimeo.com/video/320714977" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<!--Стрелки-->
+			<div class="prev-4"></div>
+			<div class="next-4"></div>
 		</div>
 	</div>
 	<script src="js/script.js"></script>

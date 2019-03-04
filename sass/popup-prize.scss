@@ -1,0 +1,238 @@
+.popup-prize {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+
+  &__wrapper {
+    width: 280px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    position: relative;
+
+    border-radius: 40px;
+
+    padding-top: 15px;
+    padding-bottom: 20px;
+
+    box-shadow: 0px 0px 25px 2px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0px 0px 25px 2px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 25px 2px rgba(0,0,0,0.4);
+
+    background: rgba(107,62,165,1);
+    background: -moz-linear-gradient(top, rgba(107,62,165,1) 0%, rgba(78,36,136,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(107,62,165,1)), color-stop(100%, rgba(78,36,136,1)));
+    background: -webkit-linear-gradient(top, rgba(107,62,165,1) 0%, rgba(78,36,136,1) 100%);
+    background: -o-linear-gradient(top, rgba(107,62,165,1) 0%, rgba(78,36,136,1) 100%);
+    background: -ms-linear-gradient(top, rgba(107,62,165,1) 0%, rgba(78,36,136,1) 100%);
+    background: linear-gradient(to bottom, rgba(107,62,165,1) 0%, rgba(78,36,136,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b3ea5', endColorstr='#4e2488', GradientType=0 );
+  }
+
+  &__close {
+    @extend .popup-enter__close;
+  }
+
+  &__title {
+    font: {
+      size: 2em;
+      family: $regular-font;
+      weight: 600;
+    }
+
+    color: $text-white;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    display: block;
+    width: 260px;
+
+    font: {
+      size: 0.875em;
+      family: $regular-font;
+      weight: 600;
+    }
+
+    color: $text-white;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  .popup-prize {
+    &__wrapper {
+      width: 380px;
+
+      border-radius: 40px;
+
+      padding-top: 15px;
+      padding-bottom: 20px;
+    }
+
+    &__title {
+      font: {
+        size: 2em;
+      }
+
+      margin-bottom: 10px;
+    }
+
+    &__description {
+      width: 350px;
+
+      font: {
+        size: 0.875em;
+      }
+
+      margin-top: 10px;
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .popup-prize {
+    &__wrapper {
+      width: 570px;
+
+      border-radius: 50px;
+
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    &__title {
+      font: {
+        size: 3.5em;
+      }
+
+      margin-bottom: 15px;
+    }
+
+    &__description {
+      width: 520px;
+
+      font: {
+        size: 1.5em;
+      }
+
+      margin-top: 15px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .popup-prize {
+    &__wrapper {
+      width: 380px;
+
+      border-radius: 40px;
+
+      padding-top: 15px;
+      padding-bottom: 20px;
+    }
+
+    &__title {
+      font: {
+        size: 2em;
+      }
+
+      margin-bottom: 10px;
+    }
+
+    &__description {
+      width: 350px;
+
+      font: {
+        size: 0.875em;
+      }
+
+      margin-top: 10px;
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .popup-prize {
+    &__wrapper {
+      width: 380px;
+
+      border-radius: 40px;
+
+      padding-top: 15px;
+      padding-bottom: 20px;
+    }
+
+    &__title {
+      font: {
+        size: 2em;
+      }
+
+      margin-bottom: 10px;
+    }
+
+    &__description {
+      width: 350px;
+
+      font: {
+        size: 0.875em;
+      }
+
+      margin-top: 10px;
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop-wide) {
+  .popup-prize {
+    &__wrapper {
+      width: 570px;
+
+      border-radius: 50px;
+
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    &__title {
+      font: {
+        size: 3.5em;
+      }
+
+      margin-bottom: 15px;
+    }
+
+    &__description {
+      width: 520px;
+
+      font: {
+        size: 1.5em;
+      }
+
+      margin-top: 15px;
+    }
+  }
+}

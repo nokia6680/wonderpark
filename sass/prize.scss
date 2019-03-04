@@ -12,6 +12,10 @@
     display: none;
   }
 
+  &--splash {
+    display: none;
+  }
+
   &__frame {
     width: 55px;
     height: 55px;
@@ -73,15 +77,20 @@
     align-items: center;
 
     padding-right: 20px;
+    padding-left: 120px;
 
     &--event,
     &--gallery {
       display: none;
     }
 
+    &--splash {
+      display: flex;
+    }
+
     &__description {
       display: block;
-      width: 310px;
+      width: 250px;
 
       font: {
         size: 1.25em;
@@ -138,6 +147,7 @@
       text-align: center;
 
       margin-bottom: 10px;
+      margin-top: 0;
     }
 
     &__frame {
