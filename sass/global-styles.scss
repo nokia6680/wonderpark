@@ -33,6 +33,13 @@ body {
   text-transform: uppercase;
 }
 
+.body-select {
+  background-image: url('../img/bg-select.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
 .body-index {
   background-color: $bg-body;
   background-image: url('../img/index-bg-mob.jpg');

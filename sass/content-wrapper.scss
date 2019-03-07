@@ -10,6 +10,10 @@
 
   margin-bottom: 20px;
 
+  &--hidden {
+    visibility: hidden;
+  }
+
   /*Стилизация элемента*/
   &__item {
     width: 90px;
