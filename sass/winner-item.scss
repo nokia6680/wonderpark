@@ -1,0 +1,100 @@
+.winner-item {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 250px;
+  width: 100%;
+  background-color: $bg-orange;
+
+  &__list {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__wrap {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 10px;
+  }
+
+  &__name {
+    font: {
+      size: 0.875em;
+      family: $regular-font;
+    }
+
+    color: $text-white;
+    text-transform: uppercase;
+    line-height: normal;
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  .winner-item {
+    height: 360px;
+
+    &__name {
+      font: {
+        size: 1.25em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .winner-item {
+    height: 500px;
+
+    &__name {
+      font: {
+        size: 1.875em;
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .winner-item {
+    height: 350px;
+
+    &__name {
+      font: {
+        size: 1.25em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .winner-item {
+    height: 350px;
+  }
+}
+
+@media only screen and (min-width: $laptop-wide) {
+  .winner-item {
+    height: 500px;
+
+    &__name {
+      font: {
+        size: 1.875em;
+      }
+    }
+  }
+}

@@ -399,9 +399,20 @@
 						<b class="main-upload__name">Анатолий М.</b>
 					</div>
 					<form class="main-upload__form upload-form" method="post" action="#">
-						<p class="upload-form__description">Чтобы отправить свой рисунок на конкурс, перетащи его сюда или нажми кнопку ниже</p>
-						<input type="file" name="file" id="file" class="upload-form__input inputfile visually-hidden" data-multiple-caption="{count} files selected" multiple />
-						<label class="upload-form__label" for="file">Выбрать рисунок</label>
+						<!--Контейнер содержимого формы ДО отправки-->
+						<div class="upload-form__wrapper upload-form__wrapper--choose">
+							<p class="upload-form__description">Чтобы отправить свой рисунок на конкурс, перетащи его сюда или нажми кнопку ниже</p>
+							<input type="file" name="file" id="file" class="upload-form__input inputfile visually-hidden" data-multiple-caption="{count} files selected" multiple />
+							<label class="upload-form__label" for="file">Выбрать рисунок</label>
+						</div>
+						<!--Контейнер присланного изображения из формы-->
+						<div class="upload-form__wrapper upload-form__wrapper--uploaded"  style="display: none;">
+							<picture class="upload-form__frame">
+								<source srcset="img/uploaded-pic.webp" type="image/webp" />
+								<img class="upload-form__image" src="img/uploaded-pic.jpg" alt="Загруженный рисунок" />
+							</picture>
+						</div>
+						<!--Кнопка отправки-->
 						<button class="upload-form__submit" type="submit">Отправить</button>
 					</form>
 					<div class="main-upload__bottom">

@@ -10,6 +10,32 @@
 
   position: relative;
 
+  &__wrapper {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__frame {
+    width: 100%;
+    min-height: 222px;
+    max-height: 222px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__pic {
+    width: 100%;
+    height: auto;
+  }
+
   &__description {
     display: block;
     width: 200px;
@@ -94,6 +120,9 @@
 
     background-color: $bg-orange;
 
+    cursor: pointer;
+    outline: none;
+
     font: {
       size: 1.25em;
       family: $regular-font;
@@ -114,6 +143,11 @@
 
 @media only screen and (min-width: $tablet) {
   .upload-form {
+    &__frame {
+      min-height: 428px;
+      max-height: 428px;
+    }
+
     &__description {
       width: 300px;
 
@@ -163,6 +197,11 @@
 
 @media only screen and (min-width: $laptop) {
   .upload-form {
+    &__frame {
+      min-height: 224px;
+      max-height: 224px;
+    }
+
     &__description {
       width: 250px;
 
@@ -199,7 +238,7 @@
     }
 
     &__submit {
-      bottom: -150px;
+      bottom: -90px;
 
       width: 140px;
       height: 35px;
@@ -215,6 +254,11 @@
 
 @media only screen and (min-width: $laptop-wide) {
   .upload-form {
+    &__frame {
+      min-height: 282px;
+      max-height: 282px;
+    }
+
     &__description {
       width: 350px;
 

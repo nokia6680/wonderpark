@@ -203,6 +203,21 @@ $(document).ready(function() {
   });
 });
 
+/*Слайдер в попапе призов*/
+$(document).ready(function() {
+  $('.winner-slider').slick({
+    infinite: true,
+    initialSlide: 1,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    fade: true,
+    arrows: true,
+    prevArrow: '<div class="prev-5"></div>',
+    nextArrow: '<div class="next-5"></div>'
+  });
+});
+
 /*Слайдер gallery*/
 $(document).ready(function() {
   $('.gallery-carousel').slick({
