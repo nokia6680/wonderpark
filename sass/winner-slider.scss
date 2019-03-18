@@ -7,11 +7,11 @@
   border-bottom: 3px solid #ffffff;
 
   /*Кнопки*/
-  .prev-3 {
+  .prev-5 {
     display: none;
   }
 
-  .next-3 {
+  .next-5 {
     display: none;
   }
 }
@@ -19,7 +19,7 @@
 @media only screen and (min-width: $tablet) {
   .winner-slider {
     /*Кнопки*/
-    .prev-4 {
+    .prev-5 {
       display: block;
       position: absolute;
 
@@ -44,7 +44,7 @@
       outline: none;
     }
 
-    .next-4 {
+    .next-5 {
       display: block;
       position: absolute;
 
@@ -74,7 +74,7 @@
 @media only screen and (min-width: $laptop-wide) {
   .winner-slider {
     /*Кнопки*/
-    .prev-4 {
+    .prev-5 {
       width: 64px;
       height: 64px;
 
@@ -84,7 +84,7 @@
       background-size: 38px 64px;
     }
 
-    .next-4 {
+    .next-5 {
       width: 64px;
       height: 64px;
 
