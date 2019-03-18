@@ -188,7 +188,7 @@ $(document).ready(function() {
   });
 });
 
-/*Слайдер в попапе призов*/
+/*Слайдер в попапе video*/
 $(document).ready(function() {
   $('.player-slider').slick({
     infinite: true,
@@ -203,11 +203,10 @@ $(document).ready(function() {
   });
 });
 
-/*Слайдер в попапе призов*/
+/*Слайдер в попапе winner*/
 $(document).ready(function() {
   $('.winner-slider').slick({
     infinite: true,
-    initialSlide: 1,
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: false,
